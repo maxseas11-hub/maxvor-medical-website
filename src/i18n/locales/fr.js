@@ -1,0 +1,176 @@
+export const fr = {
+  // Common / Global
+  brandName: 'MAXVOR',
+  brandTagline: 'Plateforme Complète de Fournitures Médicales & Équipements de Diagnostic',
+  location: 'China',
+  email: 'sales@maxvor.com',
+  b2bWholesale: 'Plateforme Globale de Fournitures Médicales',
+  directSourcing: 'Approvisionnement Consolidé & Documentation Réglementaire Export',
+  moqBadge: 'Quantité Minimale : 1 Unité pour Équipements / 1 Carton pour Consommables',
+  
+  // Navigation
+  navHome: 'Accueil',
+  navProducts: 'Produits',
+  navResources: 'Ressources',
+  navFaq: 'FAQ (Foire Aux Questions)',
+  navOem: 'Solutions d’Approvisionnement',
+  navCertifications: 'Certifications & Qualité',
+  navBlog: 'Blogs',
+  navAbout: 'À Propos',
+  navContact: 'Contact',
+  navCatalog: 'Catalogue PDF',
+  navRequestRfq: 'Demander un Devis',
+  
+  // TopBar
+  topBarBadge: 'Centre d’Approvisionnement Médical & Équipements',
+  topBarText: 'Sourcing Direct & Support aux Dossiers d’Exportation',
+  
+  // Hero
+  heroBadge: 'MAXVOR • Plateforme Globale de Fournitures Médicales & Équipements',
+  heroTitle: 'Fourniture Globale d’',
+  heroTitleHighlight: 'Équipements Médicaux',
+  heroTitleEnd: '& Consommables Cliniques',
+  heroSubtitle: 'Optimisation de l’approvisionnement pour les distributeurs de santé, appels d’offres hospitaliers et réseaux de cliniques à l’international, avec prix directs et dossiers complets.',
+  heroFeature1: 'Tarification Directe & Volumes Consolidés',
+  heroFeature2: 'Gestion de la Qualité selon Norme ISO 13485',
+  heroFeature3: 'Support Complet pour la Documentation Réglementaire & Export',
+  heroFeature4: 'Dossiers d’Exportation & Inspection par Lot',
+  heroCtaQuote: 'Demander un Devis Technique',
+  heroCtaBrowse: 'Explorer les Catégories de Produits',
+  heroFacilityBadge: 'PÔLE DE PRODUCTION & EXPORT',
+  heroFacilityTitle: 'Infrastructure d’Exportation Globale',
+  heroFacilityText: 'Sourcing consolidé d’équipements hospitaliers et de dispositifs cliniques avec contrôle qualité avant expédition, documentation multilingue et expédition directe et logistique internationale.',
+  heroFacilityDocLabel: 'Documentation d’Exportation :',
+  heroFacilityDocVal: 'Dossiers CO / DoC / COA',
+  
+  // Metrics
+  metricQuality: 'Assurance Qualité',
+  metricQualityVal: 'Normes ISO & Directives CE',
+  metricInspection: 'Contrôle à l’Export',
+  metricInspectionVal: '100% Inspecté',
+  metricLogistics: 'Logistique B2B Mondiale',
+  metricLogisticsVal: 'Export FOB / CIF',
+  metricResponse: 'Délai de Réponse RFQ',
+  metricResponseVal: '< 12 Heures',
+  
+  // Homepage Sections
+  homeCategoriesHeading: 'Catégories Principales d’Équipements Médicaux',
+  homeCategoriesSubheading: 'Systèmes de diagnostic clinique et fournitures médicales de haute fiabilité, conçus pour les hôpitaux, urgences et soins primaires internationaux.',
+  homeExploreAll: 'Voir Toutes les Catégories',
+  homeViewSpecs: 'Consulter les Spécifications Techniques',
+  homeQuickQuote: 'Devis Rapide',
+  
+  // Product Page
+  productsTitle: 'Catalogue d’Équipements & Dispositifs Médicaux',
+  productsSubtitle: 'Instruments de diagnostic autorisés, sondes d’échographie portables et fournitures cliniques disponibles pour vente en gros B2B et approvisionnement hospitalier.',
+  filterAllCategories: 'Toutes les Catégories',
+  searchPlaceholder: 'Rechercher par mot-clé, modèle ou application clinique...',
+  noProductsFound: 'Aucun produit ne correspond à votre recherche.',
+  resetFilters: 'Réinitialiser les Filtres',
+  showingResults: 'Affichage de',
+  ofProducts: 'produits',
+  viewDetails: 'Détails & Spécifications',
+  requestQuoteBtn: 'Demander un Devis',
+  authorizedBadge: 'SOURCE OFFICIELLEMENT AUTORISÉE',
+  
+  // Product Detail Page
+  backToProducts: 'Retour au Catalogue de Produits',
+  productModelLabel: 'Modèle :',
+  productCategoryLabel: 'Catégorie :',
+  productMoqLabel: 'MOQ Standard :',
+  productLeadTimeLabel: 'Délai d’Expédition :',
+  productLeadTimeVal: '3 à 10 Jours Ouvrables',
+  productInquiryBtn: 'Demander un Tarif Grossiste B2B',
+  productDatasheetBtn: 'Télécharger le Dossier Technique',
+  keyHighlightsTitle: 'Points Forts & Caractéristiques Techniques',
+  techSpecsTitle: 'Spécifications Techniques Complètes',
+  specParameter: 'Paramètre / Fonctionnalité',
+  specValue: 'Valeur de Spécification',
+  complianceNoticeTitle: 'Avis de Conformité Réglementaire & Exportation',
+  complianceNoticeText: 'Tous nos dispositifs de diagnostic font l’objet de contrôles de qualité rigoureux avant expédition. Des dossiers techniques complets, Certificats d’Origine (CO), Déclarations de Conformité (DoC) et Certificats d’Analyse (COA) sont fournis pour le dédouanement et l’enregistrement aux appels d’offres.',
+  
+  // Certifications Page
+  certPageTitle: 'Normes de Qualité & Documentation d’Exportation',
+  certPageSubtitle: 'Chaque expédition repose sur un système de management de la qualité vérifié, des tests en usine stricts et une assistance réglementaire authentique pour les marchés africains et internationaux.',
+  isoCardTitle: 'Management de la Qualité ISO 13485',
+  isoCardDesc: 'Les processus de fabrication respectent scrupuleusement la norme ISO 13485 relative aux dispositifs médicaux : traçabilité des matières premières, environnements en salle propre et contrôles lot par lot.',
+  ceCardTitle: 'Directives & Normes de Sécurité CE',
+  ceCardDesc: 'Les produits sont conformes aux directives européennes de sécurité applicables, avec déclarations d’émission acoustique et rapports de compatibilité électromagnétique (CEM).',
+  iecCardTitle: 'Sécurité Électrique & Acoustique IEC 60601',
+  iecCardDesc: 'Les équipements électromédicaux subissent des tests obligatoires de rigidité diélectrique, de courant de fuite et de courant auxiliaire patient selon les normes IEC 60601-1 et IEC 60601-2-37.',
+  dossierCardTitle: 'Dossiers de Dédouanement & d’Enregistrement',
+  dossierCardDesc: 'Nous fournissons des dossiers bilingues complets comprenant le Certificat d’Origine (CO), la Déclaration de Conformité (DoC), les rapports d’essais et les factures proforma pour faciliter l’importation au Cameroun, en Côte d’Ivoire, en RDC, au Sénégal, au Rwanda et dans toute l’Afrique francophone.',
+  
+  // Supply Solutions
+  oemPageTitle: 'Plateforme Globale d’Approvisionnement en Dispositifs & Consommables Médicaux',
+  oemPageSubtitle: 'Documentation réglementaire, packaging médical certifié et solutions complètes de chaîne d’approvisionnement pour distributeurs de santé et appels d’offres.',
+  oemStep1Title: '1. Analyse du Cahier des Charges',
+  oemStep1Desc: 'Nous analysons votre application clinique, les exigences réglementaires du pays cible, vos préférences linguistiques et les volumes prévisionnels.',
+  oemStep2Title: '2. Configuration Technique & Documentation',
+  oemStep2Desc: 'Préparation des fiches techniques, interface multilingue (Français, Anglais) et dossiers de conformité.',
+  oemStep3Title: '3. Contrôle Qualité & Échantillons Pilotes',
+  oemStep3Desc: 'Envoi d’unités d’échantillons pour validation clinique par le distributeur, accompagnées des journaux d’essais de sécurité électrique et acoustique.',
+  oemStep4Title: '4. Production en Série & Expédition Conteneur',
+  oemStep4Desc: 'Fabrication de masse standardisée sous contrôle qualité ISO 13485, conditionnement en cartons renforcés et expédition maritime/aérienne sécurisée.',
+  
+  // About Page
+  aboutPageTitle: 'À Propos de MAXVOR',
+  aboutPageSubtitle: 'Plateforme d’approvisionnement médical dédiée aux hôpitaux, cliniques et distributeurs internationaux.',
+  aboutMissionTitle: 'Notre Mission',
+  aboutMissionText: 'Connecter directement les professionnels de santé internationaux aux capacités de fabrication médicale certifiées, en garantissant une qualité irréprochable et un accompagnement complet.',
+  aboutValuesTitle: 'Pourquoi Choisir MAXVOR',
+  aboutValue1Title: 'Sourcing Authentique & Conforme',
+  aboutValue1Desc: 'Nous travaillons exclusivement avec des lignes de production rigoureusement sélectionnées et documentées.',
+  aboutValue2Title: 'Tarifs Directs & Compétitifs',
+  aboutValue2Desc: 'Bénéficiez de grilles tarifaires transparentes adaptées aux commandes institutionnelles et aux appels d’offres.',
+  aboutValue3Title: 'Expertise des Marchés Internationaux',
+  aboutValue3Desc: 'Compréhension approfondie des contraintes d’infrastructure en Afrique et à l’international, avec des équipements robustes et un support multilingue.',
+  
+  // Contact & RFQ Page
+  contactPageTitle: 'Contacter Notre Pôle Exportation Médicale',
+  contactPageSubtitle: 'Transmettez votre demande d’approvisionnement ou cahier des charges d’appel d’offres. Notre équipe export vous répond sous 12 heures.',
+  contactDirectEmail: 'Email Direct du Pôle Export :',
+  contactOfficeAddress: 'Siège Opérationnel Export :',
+  contactAddressVal: 'Ville de China, Province du Guangdong, Chine',
+  contactFormTitle: 'Demander un Devis Technique Officiel (RFQ)',
+  formFullName: 'Nom & Prénom *',
+  formEmail: 'Email Professionnel *',
+  formCompany: 'Nom de l’Entreprise / Hôpital *',
+  formCountry: 'Pays / Région *',
+  formPhone: 'Téléphone / WhatsApp',
+  formProductInterest: 'Produit ou Catégorie d’Intérêt *',
+  formQuantity: 'Quantité Estimée / Volume Cible',
+  formMessage: 'Spécifications Techniques ou Détails de l’Appel d’Offres *',
+  formSubmitBtn: 'Envoyer la Demande de Devis',
+  formSubmitting: 'Envoi en cours...',
+  formSuccessMsg: 'Merci ! Votre demande de cotation a bien été enregistrée. Notre équipe export vous contactera sous 12 heures avec une offre chiffrée et la documentation requise.',
+  
+  // Blog / Resources Hub
+  blogPageTitle: 'Centre de Ressources Cliniques & Connaissances B2B',
+  blogPageSubtitle: 'Analyses d’ingénierie approfondies, guides d’applications cliniques, guides réglementaires d’importation et retours d’expérience terrain.',
+  blogSearchTagsTitle: 'Recherche par Intention d’Achat & Thématique Technique :',
+  blogReadArticle: 'Lire l’Article Technique Complet',
+  blogBackToHub: 'Retour au Centre de Connaissances',
+  blogReadTime: 'Temps de lecture :',
+  blogAuthor: 'Rédigé par :',
+  blogRelatedProduct: 'Gamme d’Équipement Associée :',
+  
+  // Modals
+  rfqModalTitle: 'Demande de Cotation Technique Officielle (RFQ)',
+  rfqModalDesc: 'Renseignez vos besoins ci-dessous pour recevoir une tarification directe d’usine, une facture proforma officielle et les fiches techniques.',
+  quickViewTitle: 'Aperçu Rapide des Spécifications',
+  closeModal: 'Fermer',
+  
+  // Footer
+  footerDesc: 'MAXVOR est une plateforme d’approvisionnement et d’exportation d’équipements médicaux et consommables basée à China, en Chine, dédiée aux distributeurs et appels d’offres hospitaliers internationaux.',
+  footerQuickLinks: 'Accès Rapide',
+  footerCompliance: 'Qualité & Conformité',
+  footerComplianceText: 'Fabrication et inspection conformes aux systèmes de gestion de la qualité ISO 13485 et aux directives de sécurité CE. Rapports d’essais et dossiers d’exportation disponibles sur demande.',
+  footerContactUs: 'Pôle Exportation',
+  footerCopyright: '© 2026 MAXVOR. Tous droits réservés. Dédié à l’approvisionnement médical mondial.',
+  
+  // Language Switcher
+  language: 'Langue',
+  langEnglish: 'English',
+  langFrench: 'Français'
+};

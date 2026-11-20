@@ -1,0 +1,176 @@
+export const en = {
+  // Common / Global
+  brandName: 'MAXVOR',
+  brandTagline: 'Comprehensive Medical Consumables & Equipment Supply Platform',
+  location: 'China',
+  email: 'sales@maxvor.com',
+  b2bWholesale: 'Comprehensive Medical Supply Platform',
+  directSourcing: 'Integrated Consumables & Equipment • Export Documentation Support',
+  moqBadge: 'MOQ: 1 Unit for Equipment / 1 Carton for Consumables',
+  
+  // Navigation
+  navHome: 'Home',
+  navProducts: 'Products',
+  navResources: 'Resources',
+  navFaq: 'FAQ (Frequently Asked Questions)',
+  navOem: 'Supply Solutions',
+  navCertifications: 'Certifications',
+  navBlog: 'Blogs',
+  navAbout: 'About Us',
+  navContact: 'Contact',
+  navCatalog: 'Catalog PDF',
+  navRequestRfq: 'Request RFQ',
+  
+  // TopBar
+  topBarBadge: 'Comprehensive Medical Equipment & Consumables Platform',
+  topBarText: 'Integrated Clinical Supply Chain • Full Export Compliance Support',
+  
+  // Hero
+  heroBadge: 'MAXVOR • Comprehensive Medical Consumables & Equipment Platform',
+  heroTitle: 'Direct Factory Supply of',
+  heroTitleHighlight: 'Medical Equipment',
+  heroTitleEnd: '& Clinical Supplies',
+  heroSubtitle: 'Streamlining B2B procurement for overseas healthcare distributors, hospital tenders, and clinic networks with direct source pricing, export documentation, and reliable fulfillment.',
+  heroFeature1: 'Factory Direct B2B Wholesale Pricing',
+  heroFeature2: 'ISO Standard Manufacturing Quality',
+  heroFeature3: 'Comprehensive Export Documentation Support',
+  heroFeature4: 'Full Lot Inspection & Global Dispatch',
+  heroCtaQuote: 'Request Line Quotation',
+  heroCtaBrowse: 'Explore Product Categories',
+  heroFacilityBadge: 'MANUFACTURING & EXPORT HUB',
+  heroFacilityTitle: 'B2B Export Infrastructure',
+  heroFacilityText: 'Consolidated hospital equipment and clinical device sourcing with pre-shipment quality verification, multi-language documentation, and direct dispatch and international shipping.',
+  heroFacilityDocLabel: 'Export Documentation:',
+  heroFacilityDocVal: 'CO / DoC / COA Dossiers',
+  
+  // Metrics
+  metricQuality: 'Quality Assurance',
+  metricQualityVal: 'ISO & CE Standards',
+  metricInspection: 'Export Verification',
+  metricInspectionVal: '100% Inspected',
+  metricLogistics: 'Global B2B Logistics',
+  metricLogisticsVal: 'FOB / CIF Export',
+  metricResponse: 'Inquiry Response Time',
+  metricResponseVal: '< 12 Hours',
+  
+  // Homepage Sections
+  homeCategoriesHeading: 'Featured Medical Product Categories',
+  homeCategoriesSubheading: 'High-reliability clinical diagnostic systems and medical supplies designed for global hospital, emergency, and primary care procurement.',
+  homeExploreAll: 'Explore All Categories',
+  homeViewSpecs: 'View Technical Specifications',
+  homeQuickQuote: 'Quick RFQ',
+  
+  // Product Page
+  productsTitle: 'Medical Equipment & Device Catalog',
+  productsSubtitle: 'Authorized diagnostic instruments, point-of-care imaging probes, and clinical supplies available for B2B wholesale and global healthcare procurement.',
+  filterAllCategories: 'All Categories',
+  searchPlaceholder: 'Search products by keyword, model, or clinical application...',
+  noProductsFound: 'No products found matching your search.',
+  resetFilters: 'Reset Filters',
+  showingResults: 'Showing',
+  ofProducts: 'products',
+  viewDetails: 'View Details & Specs',
+  requestQuoteBtn: 'Request Quotation',
+  authorizedBadge: 'AUTHORIZED SOURCE',
+  
+  // Product Detail Page
+  backToProducts: 'Back to Products Catalog',
+  productModelLabel: 'Model:',
+  productCategoryLabel: 'Category:',
+  productMoqLabel: 'Standard MOQ:',
+  productLeadTimeLabel: 'Lead Time:',
+  productLeadTimeVal: '3-10 Business Days',
+  productInquiryBtn: 'Inquire for B2B Pricing',
+  productDatasheetBtn: 'Download Technical Dossier',
+  keyHighlightsTitle: 'Key Technical Highlights',
+  techSpecsTitle: 'Full Technical Specifications',
+  specParameter: 'Parameter / Feature',
+  specValue: 'Specification Value',
+  complianceNoticeTitle: 'Regulatory & Export Compliance Notice',
+  complianceNoticeText: 'All diagnostic products undergo strict multi-stage quality verification prior to dispatch. Complete technical dossiers, Certificate of Origin (CO), Declaration of Conformity (DoC), and Certificate of Analysis (COA) are provided for customs clearance and tender registration.',
+  
+  // Certifications Page
+  certPageTitle: 'Quality Standards & Export Documentation',
+  certPageSubtitle: 'Grounding every shipment in verified quality management systems, rigorous factory testing, and authentic regulatory export support for African and international healthcare procurement.',
+  isoCardTitle: 'ISO 13485 Quality Management',
+  isoCardDesc: 'Manufacturing processes adhere strictly to ISO 13485 medical device quality systems, covering raw material traceability, cleanroom environment controls, and lot-by-lot inspection.',
+  ceCardTitle: 'CE Safety Directives & Standards',
+  ceCardDesc: 'Products comply with applicable European CE safety directives, acoustic output declarations, and electromagnetic compatibility (EMC) testing reports.',
+  iecCardTitle: 'IEC 60601 Electrical Safety Testing',
+  iecCardDesc: 'Medical electrical equipment undergoes mandatory dielectric withstand, earth leakage, and patient auxiliary current testing in accordance with IEC 60601-1 and IEC 60601-2-37 standards.',
+  dossierCardTitle: 'Customs & Tender Registration Dossiers',
+  dossierCardDesc: 'We supply complete bilingual registration dossiers including Certificate of Origin (CO), Declaration of Conformity (DoC), Factory Test Reports, and Commercial Invoices for smooth importation in Kenya, Tanzania, Cameroon, Rwanda, and across Africa.',
+  
+  // Supply Solutions
+  oemPageTitle: 'Comprehensive Medical Consumables & Diagnostic Supply Platform',
+  oemPageSubtitle: 'Regulatory documentation support, certified medical packaging, and complete supply chain solutions for global healthcare distributors and tenders.',
+  oemStep1Title: '1. Requirement & Spec Clarification',
+  oemStep1Desc: 'We analyze your clinical application, target market regulatory requirements, language preferences, and expected order volume.',
+  oemStep2Title: '2. Technical Configuration & Documentation',
+  oemStep2Desc: 'Preparing comprehensive specification sheets, bilingual documentation (English, French), and compliance files.',
+  oemStep3Title: '3. Quality Verification & Sample Testing',
+  oemStep3Desc: 'Sample units dispatched for clinical trial and distributor sign-off with accompanying safety test logs and acoustic reports.',
+  oemStep4Title: '4. Batch Production & Container Dispatch',
+  oemStep4Desc: 'Standardized mass manufacturing under ISO 13485 quality oversight with tailored master cartons and complete export shipping paperwork.',
+  
+  // About Page
+  aboutPageTitle: 'About MAXVOR',
+  aboutPageSubtitle: 'Dedicated medical supply chain platform empowering healthcare providers, clinics, and distributors with reliable, high-value medical technologies.',
+  aboutMissionTitle: 'Our Mission',
+  aboutMissionText: 'To connect global healthcare providers with direct, transparent, and compliant certified medical manufacturing, ensuring uncompromised product quality.',
+  aboutValuesTitle: 'Why Choose MAXVOR',
+  aboutValue1Title: 'Authentic & Authorized Sourcing',
+  aboutValue1Desc: 'We exclusively work with verified manufacturing lines with genuine authorizations and verifiable test data.',
+  aboutValue2Title: 'Direct & Competitive Pricing',
+  aboutValue2Desc: 'Bypass intermediary trading markups with transparent factory-direct tiered pricing for wholesale orders and tenders.',
+  aboutValue3Title: 'International Market Localization',
+  aboutValue3Desc: 'Deep understanding of healthcare infrastructure in international markets with multilingual support and rugged hardware design.',
+  
+  // Contact & RFQ Page
+  contactPageTitle: 'Contact Our Medical Export Desk',
+  contactPageSubtitle: 'Submit your procurement inquiry or tender specification sheet. Our clinical export team responds within 12 hours.',
+  contactDirectEmail: 'Direct Export Inquiries:',
+  contactOfficeAddress: 'Export Operations Hub:',
+  contactAddressVal: 'China',
+  contactFormTitle: 'Request Official Technical Quotation (RFQ)',
+  formFullName: 'Full Name *',
+  formEmail: 'Business Email *',
+  formCompany: 'Company / Hospital Name *',
+  formCountry: 'Country / Region *',
+  formPhone: 'Phone / WhatsApp',
+  formProductInterest: 'Product or Category of Interest *',
+  formQuantity: 'Estimated Quantity / Target MOQ',
+  formMessage: 'Detailed Specifications or Tender Requirements *',
+  formSubmitBtn: 'Submit RFQ Inquiry',
+  formSubmitting: 'Submitting...',
+  formSuccessMsg: 'Thank you! Your quotation request has been received. Our export team will contact you within 12 hours with official pricing and documentation.',
+  
+  // Blog / Resources Hub
+  blogPageTitle: 'Enterprise Clinical Resource & Knowledge Hub',
+  blogPageSubtitle: 'In-depth engineering teardowns, clinical application guides, regulatory checklists, and real-world healthcare deployment case studies for overseas buyers.',
+  blogSearchTagsTitle: 'Search by Sourcing Intent & Technical Topic:',
+  blogReadArticle: 'Read Full Technical Briefing',
+  blogBackToHub: 'Back to Knowledge Hub',
+  blogReadTime: 'Read Time:',
+  blogAuthor: 'Published by:',
+  blogRelatedProduct: 'Related Equipment Line:',
+  
+  // Modals
+  rfqModalTitle: 'Request Official B2B Technical Quotation',
+  rfqModalDesc: 'Provide your procurement details below to receive factory-direct pricing, formal Proforma Invoice, and technical data sheets.',
+  quickViewTitle: 'Product Quick Specifications',
+  closeModal: 'Close',
+  
+  // Footer
+  footerDesc: 'MAXVOR is a dedicated B2B medical equipment and clinical supply chain hub based in China, delivering certified diagnostic instruments and hospital supplies to overseas distributors and tenders.',
+  footerQuickLinks: 'Quick Links',
+  footerCompliance: 'Quality & Compliance',
+  footerComplianceText: 'Manufactured and inspected in accordance with ISO 13485 quality systems and applicable CE safety standards. All test data and export dossiers verifiable upon request.',
+  footerContactUs: 'Global Export Desk',
+  footerCopyright: '© 2026 MAXVOR. All Rights Reserved. Built for Global Healthcare Procurement.',
+  
+  // Language Switcher
+  language: 'Language',
+  langEnglish: 'English',
+  langFrench: 'Français'
+};

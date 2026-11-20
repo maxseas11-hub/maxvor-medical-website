@@ -1,0 +1,359 @@
+# -*- coding: utf-8 -*-
+import json, os
+
+# Let's define the comprehensive dataset for all 8 categories (total 69 products)
+
+all_prods = []
+
+# ==========================================
+# 1. ENDOSCOPY CONSUMABLES (9)
+# ==========================================
+endo = [
+  {
+    "id": "prod-endo-001",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "Medical Disposable Holmium Laser Fiber (SMA905 Connector)",
+    "model": "HLF-SMA905",
+    "medicalClass": "Class II / Class IIa",
+    "image": "/assets/images/endo-laser-fiber.png",
+    "rating": 4.9,
+    "reviews": 128,
+    "isCustomizable": True,
+    "shortDesc": "Medical-grade low-OH pure quartz optical fiber designed for 2100nm holmium laser lithotripsy and soft-tissue ablation via flexible and rigid ureteroscopes.",
+    "specs": [
+      { "label": "Fiber Core Sizes", "value": "200μm, 272μm, 365μm, 400μm, 550μm, 800μm, 1000μm" },
+      { "label": "Optical Connector", "value": "Standard SMA905 Medical Interface (Anti-Reflection Coated)" },
+      { "label": "Core / Cladding Material", "value": "High-Purity Low-OH Synthetic Quartz / Doped Fluorine Cladding" },
+      { "label": "Buffer & Outer Jacket", "value": "Bio-Inert ETFE / Polyimide Protective Sheath" },
+      { "label": "Fiber Length", "value": "3.0 Meters Standard (Custom Lengths Available)" },
+      { "label": "Numerical Aperture (NA)", "value": "0.22 ± 0.02" },
+      { "label": "Sterility & Packaging", "value": "EO Gas Sterile, Individual Double Peel Pouch, 1 pc/box" }
+    ],
+    "applications": [
+      "Intracorporeal lithotripsy for renal, ureteral, and bladder calculi",
+      "Flexible ureterorenoscopy (fURS) and rigid ureteroscopy procedures",
+      "Soft tissue ablation, enucleation, vaporization, and hemostasis"
+    ],
+    "features": [
+      "High energy transmission efficiency (> 95% at 2100nm wavelength)",
+      "Superior bend radius flexibility optimized for deflected flexible ureteroscopes",
+      "Precision cleaved distal tip for uniform laser spot delivery",
+      "Full biocompatibility tested per ISO 10993"
+    ],
+    "seoKeywords": ["Holmium Laser Fiber", "SMA905 Laser Fiber", "Urology Lithotripsy Fiber", "200um Laser Fiber", "365um Laser Fiber", "fURS Laser Consumables"],
+    "certifications": ["CE MDR 2017/745", "FDA Listed", "ISO 13485", "ISO 10993"],
+    "moq": "500 Units",
+    "isBestSeller": True,
+    "tabCategory": "surgical-emergency",
+    "excelSource": "内窥镜耗材.xlsx (Row 4: 医用一次性钬激光光纤)"
+  },
+  {
+    "id": "prod-endo-002",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "Disposable Nitinol Endoscopic Stone Retrieval Basket",
+    "model": "SRB-NT400",
+    "medicalClass": "Class II / Class IIa",
+    "image": "/assets/images/endo-stone-basket.png",
+    "rating": 5.0,
+    "reviews": 94,
+    "isCustomizable": True,
+    "shortDesc": "Superelastic shape-memory Nitinol basket designed for traumatic-free stone capture, repositioning, and extraction in ureter and renal calyces.",
+    "specs": [
+      { "label": "Basket Wire Design", "value": "4-Wire / 3-Wire Tipless & Helical Baskets" },
+      { "label": "Basket Expanded Diameters", "value": "10mm, 15mm, 20mm" },
+      { "label": "Sheath Outer Diameter", "value": "1.8Fr, 2.2Fr, 2.4Fr, 3.0Fr" },
+      { "label": "Working Length", "value": "650mm (Rigid), 900mm (Flexible Ureteroscopy), 1200mm" },
+      { "label": "Sheath Material", "value": "Low-Friction Coated Polyimide / PTFE Sheath" },
+      { "label": "Handle Control", "value": "Ergonomic One-Hand Sliding Control with Position Lock" },
+      { "label": "Sterility & Packaging", "value": "EO Gas Sterilized, 1 pc/sterile pouch, 5 pouches/box" }
+    ],
+    "applications": [
+      "Ureteroscopic extraction of fragmented calculi after lithotripsy",
+      "Endoscopic stone capture in renal pelvis and upper/lower calyces",
+      "Foreign body retrieval in gastrointestinal and biliary tracts"
+    ],
+    "features": [
+      "Shape-memory Nitinol wire maintains basket geometry under severe deflection",
+      "Tipless distal design allows direct capture of stones at the calyceal floor",
+      "High radial dilation force for secure stone retention without slippage",
+      "Ultra-thin flexible sheath compatible with down to 1.8Fr working channels"
+    ],
+    "seoKeywords": ["Nitinol Stone Basket", "Endoscopic Stone Extractor", "Tipless Stone Basket", "Urology Retrieval Basket", "Dormia Basket"],
+    "certifications": ["CE MDR 2017/745", "FDA Listed", "ISO 13485"],
+    "moq": "500 Units",
+    "isBestSeller": True,
+    "tabCategory": "surgical-emergency",
+    "excelSource": "内窥镜耗材.xlsx (Row 7 & 9: 一次性使用内窥镜取石网篮)"
+  },
+  {
+    "id": "prod-endo-003",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "Disposable Hydrophilic Coated Zebra Guidewire (Nitinol Core)",
+    "model": "ZGW-NT150",
+    "medicalClass": "Class II / Class IIa",
+    "image": "/assets/images/endo-zebra-guidewire.png",
+    "rating": 4.9,
+    "reviews": 165,
+    "isCustomizable": True,
+    "shortDesc": "High-torque Nitinol wire with highly visible spiral zebra stripes and durable hydrophilic coating for effortless endoscopic access and catheter exchange.",
+    "specs": [
+      { "label": "Core Material", "value": "Superelastic 1:1 Torque-Transmitting Nitinol Core" },
+      { "label": "Outer Jacket & Coating", "value": "Blue/White Helical Striped TPU with Lubricious Hydrophilic Layer" },
+      { "label": "Available Diameters", "value": "0.028\", 0.032\", 0.035\", 0.038\"" },
+      { "label": "Working Lengths", "value": "150cm (Standard Urology), 180cm, 260cm, 450cm" },
+      { "label": "Distal Tip Configurations", "value": "Straight Flexible Tip / Angled Floppy Tip (3cm / 5cm Taper)" },
+      { "label": "Radiopacity", "value": "Platinum/Tungsten Embedded Radiopaque Distal Marker" },
+      { "label": "Packaging", "value": "1 pc/sterile dispenser hoop, 10 pcs/box" }
+    ],
+    "applications": [
+      "Primary ureteral and biliary tract access during endoscopy",
+      "Guidance and coaxial exchange for DJ stents, dilators, and access sheaths",
+      "Traversing tortuous or strictured luminal anatomy"
+    ],
+    "features": [
+      "100% Kink-resistant Nitinol core ensures continuous structural integrity",
+      "Hydrophilic polymer coating slashes frictional coefficient for smooth passage",
+      "Helical zebra pattern provides clear fluoroscopic and visual motion tracking"
+    ],
+    "seoKeywords": ["Zebra Guidewire", "Hydrophilic Guidewire", "Urology Nitinol Guidewire", "0.035 Zebra Wire", "Endoscopic Guide Wire"],
+    "certifications": ["CE MDR", "FDA Listed", "ISO 13485"],
+    "moq": "500 Units",
+    "isBestSeller": True,
+    "tabCategory": "surgical-emergency",
+    "excelSource": "内窥镜耗材.xlsx (Row 14 & 16: 亲水涂层斑马导丝/镍钛导丝)"
+  },
+  {
+    "id": "prod-endo-004",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "Single-Use Ureteral Access Sheath with Dilator (UAS)",
+    "model": "UAS-HD205",
+    "medicalClass": "Class II / Class IIa",
+    "image": "/assets/images/endo-access-sheath.png",
+    "rating": 4.8,
+    "reviews": 82,
+    "isCustomizable": True,
+    "shortDesc": "Coil-reinforced ureteral access sheath creating a continuous low-pressure surgical working conduit for repeated flexible ureteroscope passage.",
+    "specs": [
+      { "label": "Inner / Outer Diameters", "value": "10/12Fr, 11/13Fr, 12/14Fr, 14/16Fr" },
+      { "label": "Effective Sheath Lengths", "value": "20cm, 28cm, 35cm, 45cm, 55cm" },
+      { "label": "Tube Wall Construction", "value": "Stainless Steel Coil-Reinforced Multi-Layer Polymeric Composite" },
+      { "label": "Surface Lubricity", "value": "Full-Length Activated Hydrophilic Coating" },
+      { "label": "Dilator Compatibility", "value": "Tapered Dilator accepts up to 0.038\" Guidewire" },
+      { "label": "Radiopaque Markers", "value": "Dual Radiopaque Ring at Distal Tip and Dilator Junction" },
+      { "label": "Packaging", "value": "Individual Sterile Blister Tray, 5 sets/box" }
+    ],
+    "applications": [
+      "Flexible ureterorenoscopy (RIRS) and holmium/thulium laser lithotripsy",
+      "Continuous renal pelvis irrigation and low intrarenal pressure maintenance",
+      "Facilitating multiple scope passages while protecting the ureter from trauma"
+    ],
+    "features": [
+      "Flat stainless steel coil reinforcement prevents sheath collapse and kinking",
+      "Seamless transition between dilator tip and sheath edge minimizes insertion force",
+      "Hydrophilic outer layer protects ureteral mucosal lining during dilation"
+    ],
+    "seoKeywords": ["Ureteral Access Sheath", "UAS Sheath", "RIRS Access Sheath", "Flexible Ureteroscope Sheath", "12 14Fr UAS"],
+    "certifications": ["CE MDR Class IIa", "FDA Listed", "ISO 13485"],
+    "moq": "500 Units",
+    "isBestSeller": True,
+    "tabCategory": "surgical-emergency",
+    "excelSource": "内窥镜耗材.xlsx (Row 18 & 20: 输尿管导引鞘/扩张鞘套件)"
+  },
+  {
+    "id": "prod-endo-005",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "Disposable Ureteral Stone Occlusion Cone Catheter",
+    "model": "SOC-C300",
+    "medicalClass": "Class II / Class IIa",
+    "image": "/assets/images/endo-stone-basket.png",
+    "rating": 4.7,
+    "reviews": 38,
+    "isCustomizable": True,
+    "shortDesc": "Nitinol helical occlusion device positioned proximal to ureteral calculi to prevent upward stone migration into the kidney during pneumatic or laser lithotripsy.",
+    "specs": [
+      { "label": "Catheter Outer Diameter", "value": "2.8Fr, 3.0Fr" },
+      { "label": "Working Length", "value": "90cm, 115cm, 140cm" },
+      { "label": "Occlusion Cone Diameters", "value": "7mm, 10mm (Resilient Nitinol Coils)" },
+      { "label": "Deployment Mechanism", "value": "Handle Push-Pull Deployment and Retraction" },
+      { "label": "Guidewire Lumen", "value": "Compatible with 0.035\" Guidewire" },
+      { "label": "Sterility & Packaging", "value": "EO Gas Sterilized, 1 set/pouch, 5 sets/box" }
+    ],
+    "applications": [
+      "Trapping mid and proximal ureteral stones during pneumatic, ballistic, and laser lithotripsy",
+      "Preventing retrograde stone retropulsion into upper renal calyces",
+      "Extraction of smaller stone fragments during catheter withdrawal"
+    ],
+    "features": [
+      "Conical spiral coil provides 360° circumferential occlusion against the ureteral wall",
+      "Allows continuous irrigation fluid outflow while blocking stone fragments",
+      "Easily resheathed and repositioned without tissue trauma"
+    ],
+    "seoKeywords": ["Stone Cone Catheter", "Ureteral Occlusion Catheter", "Stone Retropulsion Prevention", "Urology Anti-Migration Device"],
+    "certifications": ["CE MDR", "FDA Listed", "ISO 13485"],
+    "moq": "500 Units",
+    "isBestSeller": False,
+    "tabCategory": "surgical-emergency",
+    "excelSource": "内窥镜耗材.xlsx (Row 22: 输尿管封堵取石导管)"
+  },
+  {
+    "id": "prod-endo-006",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "High-Pressure Ureteral Balloon Dilatation Catheter Kit",
+    "model": "UBD-HP600",
+    "medicalClass": "Class II / Class IIa",
+    "image": "/assets/images/endo-balloon-dilator.png",
+    "rating": 4.9,
+    "reviews": 51,
+    "isCustomizable": True,
+    "shortDesc": "Non-compliant high-pressure balloon catheter for controlled radial dilatation of ureteral strictures, ureteropelvic junction (UPJ) stenosis, and nephrostomy tracts.",
+    "specs": [
+      { "label": "Balloon Diameters", "value": "4mm, 5mm, 6mm, 7mm" },
+      { "label": "Balloon Lengths", "value": "20mm, 40mm, 60mm" },
+      { "label": "Rated Burst Pressure (RBP)", "value": "Up to 20 - 30 atm (Ultra High-Pressure Non-Compliant)" },
+      { "label": "Catheter Shaft Size", "value": "5Fr / 6Fr Dual-Lumen (Compatible with 0.035\" Guidewire)" },
+      { "label": "Working Shaft Length", "value": "65cm, 90cm, 100cm" },
+      { "label": "Radiopaque Markers", "value": "Dual Embedded Gold/Platinum Markers outlining Balloon Shoulders" },
+      { "label": "Packaging", "value": "Individual Sterile Pouch with Inflation Syringe Connector" }
+    ],
+    "applications": [
+      "Dilation of congenital or acquired ureteral strictures and ureterointestinal anastomoses",
+      "Dilation of ureteropelvic junction (UPJ) and ureterovesical junction (UVJ)",
+      "Pre-dilation of ureteral orifice prior to ureterorenoscopy"
+    ],
+    "features": [
+      "Non-compliant medical nylon material prevents dog-boning and ensures uniform dilation",
+      "Ultra-high burst rating handles tough fibrotic and post-surgical strictures",
+      "Rapid deflation profile speeds up procedural time"
+    ],
+    "seoKeywords": ["Ureteral Balloon Dilator", "High Pressure Balloon Catheter", "Urology Dilatation Catheter", "UPJ Balloon Dilator"],
+    "certifications": ["CE MDR Class IIa", "FDA Listed", "ISO 13485"],
+    "moq": "500 Units",
+    "isBestSeller": False,
+    "tabCategory": "surgical-emergency",
+    "excelSource": "内窥镜耗材.xlsx (Row 24: 球囊扩张导管套件)"
+  },
+  {
+    "id": "prod-endo-007",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "Disposable Polyurethane Double J (DJ) Stent Kit with Guidewire",
+    "model": "DJS-PU500",
+    "medicalClass": "Class II / Class IIb",
+    "image": "/assets/images/endo-dj-stent.png",
+    "rating": 5.0,
+    "reviews": 210,
+    "isCustomizable": True,
+    "shortDesc": "Thermosensitive biocompatible polyurethane double pigtail stent kit for reliable post-operative upper urinary tract drainage and mucosal recovery.",
+    "specs": [
+      { "label": "Stent Outer Sizes", "value": "4Fr, 4.8Fr, 5Fr, 6Fr, 7Fr, 8Fr" },
+      { "label": "Standard Lengths", "value": "22cm, 24cm, 26cm, 28cm, 30cm (Multi-Length Available)" },
+      { "label": "Tip Configuration", "value": "Open / Open or Open / Closed Pigtail Tips with Extraction Suture" },
+      { "label": "Material", "value": "Thermosensitive Radiopaque Polyurethane (Softens at 37°C in vivo)" },
+      { "label": "Kit Components", "value": "1x DJ Stent, 1x PTFE Guidewire (0.035\"), 1x Pusher with Ring, 1x Clamp" },
+      { "label": "Indwelling Duration", "value": "Short-term (30 Days) / Extended-term (Up to 90 Days)" },
+      { "label": "Packaging", "value": "1 Kit/Sterile Peel Pack, 10 Kits/Box" }
+    ],
+    "applications": [
+      "Internal urinary drainage post-ureteroscopy, PCNL, or ESWL lithotripsy",
+      "Temporary bypass of ureteral obstruction caused by stones, tumors, or strictures",
+      "Facilitating healing and preventing ureteral strictures after endourological surgery"
+    ],
+    "features": [
+      "Smooth thermosensitive polymer minimizes bladder irritation and encrustation",
+      "Multiple drainage side holes maximize urine flow along and through the stent lumen",
+      "100% full-length radiopacity for accurate X-ray and ultrasound positioning"
+    ],
+    "seoKeywords": ["Double J Stent", "DJ Stent Kit", "Ureteral Stent", "Pigtail Ureteral Stent", "Polyurethane DJ Stent"],
+    "certifications": ["CE MDR Class IIb", "FDA Listed", "ISO 13485"],
+    "moq": "500 Units",
+    "isBestSeller": True,
+    "tabCategory": "hospital-essentials",
+    "excelSource": "内窥镜耗材.xlsx (Row 26: 双J管/输尿管支架套件)"
+  },
+  {
+    "id": "prod-endo-008",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "Micro-Invasive PCNL Percutaneous Nephrostomy Dilator & Drainage Kit",
+    "model": "PCNL-DK800",
+    "medicalClass": "Class II / Class IIa",
+    "image": "/assets/images/endo-pcnl-kit.png",
+    "rating": 4.9,
+    "reviews": 76,
+    "isCustomizable": True,
+    "shortDesc": "Complete sequential fascial dilatation and percutaneous nephrostomy access kit for minimally invasive nephrolithotomy and emergency renal drainage.",
+    "specs": [
+      { "label": "Sequential Dilators", "value": "8Fr, 10Fr, 12Fr, 14Fr, 16Fr, 18Fr, 20Fr, 22Fr, 24Fr (2Fr Increments)" },
+      { "label": "Working Sheaths", "value": "Tear-Away / Rigid Amplatz Sheaths (16Fr, 18Fr, 20Fr, 22Fr, 24Fr)" },
+      { "label": "Puncture Needle", "value": "18G Two-Part / Three-Part Chiba Needle with Echogenic Tip" },
+      { "label": "Guidewire Spec", "value": "0.038\" x 150cm J-Tip Super-Stiff Guidewire (Heavy Duty Core)" },
+      { "label": "Drainage Catheter", "value": "Silicone / Latex Nephrostomy Foley Catheter with Luer Adapter" },
+      { "label": "Sterility & Packaging", "value": "EO Gas Sterile Complete Procedural Tray, 1 Set/Box" }
+    ],
+    "applications": [
+      "Establishing percutaneous renal access tract for PCNL / Mini-PCNL stone surgery",
+      "Percutaneous nephrostomy drainage for obstructive uropathy and pyonephrosis",
+      "Antegrade endourological interventions"
+    ],
+    "features": [
+      "Gradual 2Fr step dilatation reduces insertion resistance and renal parenchymal bleeding",
+      "Ultra-sharp echogenic needle tip enables pinpoint ultrasonic and fluoroscopic targeting",
+      "Super-stiff guidewire prevents track loss during serial fascial dilation"
+    ],
+    "seoKeywords": ["PCNL Kit", "Percutaneous Nephrostomy Kit", "Amplatz Renal Dilator", "Nephrostomy Drainage Set", "PCNL Sheath"],
+    "certifications": ["CE MDR Class IIa", "FDA Listed", "ISO 13485"],
+    "moq": "500 Units",
+    "isBestSeller": True,
+    "tabCategory": "surgical-emergency",
+    "excelSource": "内窥镜耗材.xlsx (Row 28: PCNL经皮肾穿刺引流套件)"
+  },
+  {
+    "id": "prod-endo-009",
+    "categoryId": "endoscopy-consumables",
+    "categoryName": "Endoscopy Consumables & Accessories",
+    "name": "Endoscopic Operating Instruments (Biopsy Forceps, Grasping Forceps & Scissors)",
+    "model": "EOI-HD900",
+    "medicalClass": "Class II / Class IIa",
+    "image": "/assets/images/endo-biopsy-forceps.png",
+    "rating": 4.8,
+    "reviews": 63,
+    "isCustomizable": True,
+    "shortDesc": "Precision micro-mechanical endoscopic forceps, biopsy samplers, and scissors for rigid cystoscopes, ureteroscopes, and flexible endoscopes.",
+    "specs": [
+      { "label": "Instrument Variants", "value": "Oval Biopsy Forceps, Alligator Grasping Forceps, 3-Prong Foreign Body Forceps, Micro-Scissors" },
+      { "label": "Rigid Instrument Sizes", "value": "3Fr, 4Fr, 5Fr, 7Fr with Flexible/Semi-Rigid Shaft (Length: 350mm - 600mm)" },
+      { "label": "Flexible Instrument Sizes", "value": "Outer Diameter 1.8mm, 2.3mm (Working Length: 1050mm, 1600mm, 2300mm)" },
+      { "label": "Material Composition", "value": "Medical-Grade 304 / 316L Stainless Steel Jaws + PTFE Coated Spring Shaft" },
+      { "label": "Jaw Action", "value": "Precision Double-Action Cup with Laser-Sharpened Cutting Edge" },
+      { "label": "Sterility", "value": "Individually EO Gas Sterile Pouch, 10 pcs/box" }
+    ],
+    "applications": [
+      "Endoscopic tissue biopsy sampling in bladder, ureter, and stomach",
+      "Extraction of foreign bodies, stents, and stone fragments",
+      "Microsurgical cutting of strictures and mucosal adhesions"
+    ],
+    "features": [
+      "Laser micro-welded jaws ensure zero risk of detachment inside working channels",
+      "Coated outer spring tube protects endoscope working channel from abrasion",
+      "Crisp tactile feedback for clean mucosal tissue bite without tearing"
+    ],
+    "seoKeywords": ["Endoscopic Biopsy Forceps", "Urology Grasping Forceps", "Foreign Body Forceps", "Rigid Cystoscopy Forceps", "Endoscope Forceps"],
+    "certifications": ["CE MDR", "FDA Listed", "ISO 13485"],
+    "moq": "500 Units",
+    "isBestSeller": False,
+    "tabCategory": "surgical-emergency",
+    "excelSource": "内窥镜耗材.xlsx (Row 30: 内窥镜配套操作器械:活检钳/取石钳/剪刀)"
+  }
+]
+all_prods.extend(endo)
+
+print(f"Endoscopy added: {len(endo)}")
+
+with open('catalog_part1.json', 'w', encoding='utf-8') as f:
+    json.dump(all_prods, f, ensure_ascii=False, indent=2)

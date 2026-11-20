@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="gradNavy1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2540"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="gradTeal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+  <!-- Icon: Modern Shield with Intersecting M & Pulse Wave -->
+  <g transform="translate(10, 10)">
+    <rect width="60" height="60" rx="16" fill="url(#gradNavy1)"/>
+    <path d="M 30,12 L 48,18 C 48,34 40,46 30,50 C 20,46 12,34 12,18 Z" 
+          fill="none" stroke="url(#gradTeal1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 21,34 L 26,24 L 30,32 L 34,24 L 39,34" 
+          fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="30" cy="40" r="2.5" fill="url(#gradTeal1)"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="82" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="900" letter-spacing="2" fill="#0A2540">
+    MAXVOR
+  </text>
+</svg>

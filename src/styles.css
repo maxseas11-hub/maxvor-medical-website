@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0A2540;
+  --color-primary-deep: #0F2038;
+  --color-secondary: #0D9488;
+  --color-accent: #0EA5E9;
+  --color-surface: #FFFFFF;
+  --color-canvas: #F8FAFC;
+  --color-canvas-alt: #F1F5F9;
+  --color-on-surface: #0F2038;
+  --color-on-primary: #FFFFFF;
+  --color-muted: #475569;
+  --color-border: #CBD5E1;
+  --color-border-soft: #E2E8F0;
+  --color-success: #10B981;
+  --color-success-ink: #065F46;
+  --color-warning: #B45309;
+  --color-danger: #B91C1C;
+  --color-focus: #0284C7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--color-on-surface);
+    background-color: var(--color-canvas);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom utility & component classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark-glass-panel {
+  background: rgba(15, 32, 56, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

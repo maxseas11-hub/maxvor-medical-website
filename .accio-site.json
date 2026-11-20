@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "siteId": "58cfny86a5p9pf4m",
+  "siteIdSyncStatus": "synced",
+  "name": "medisupply-hub",
+  "kind": "react-vite",
+  "devCommand": "vite",
+  "buildCommand": "vite build",
+  "outputDir": "dist",
+  "entry": "index.html",
+  "databaseUrl": "",
+  "createdBy": "accio-site-builder",
+  "createdAt": "2026-10-12T07:17:10.900Z"
+}
