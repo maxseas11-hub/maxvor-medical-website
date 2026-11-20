@@ -25,6 +25,17 @@ function AppContent() {
   const location = useLocation();
   const isAdmin = location.pathname.startsWith('/admin');
 
+  // SPA Route Pageview Tracking for Google Analytics 4
+  React.useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', {
+        page_path: location.pathname + location.search,
+        page_location: window.location.href,
+        page_title: document.title
+      });
+    }
+  }, [location]);
+
   const [rfqModalOpen, setRfqModalOpen] = useState(false);
   const [rfqProduct, setRfqProduct] = useState(null);
   const [rfqCategory, setRfqCategory] = useState(null);
