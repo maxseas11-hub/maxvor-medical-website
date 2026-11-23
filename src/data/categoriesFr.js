@@ -22,6 +22,28 @@ export const CATEGORIES_FR = [
     "moq": "1 Unité"
   },
   {
+    "id": "endoscopy-systems",
+    "name": "Systèmes d'Endoscopie Rigide & Souple et Accessoires",
+    "shortName": "Endoscopie & Instruments Chirurgicaux",
+    "image": "/assets/images/cat-endoscopy-matrix.png",
+    "squareImage": "/assets/images/cat-endoscopy-square.png",
+    "tagline": "Néphroscopes numériques haute définition, urétéroscopes, cystoscopes, hystéroscopes, processeurs de caméra 4K et instruments de lithotripsie à pression négative",
+    "subcategories": [
+      "Mini-Néphroscopes Numériques de Ponction Visuelle (0.9mm / 8.5/12Fr / 15/18Fr)",
+      "Urétéro-Rénoscopes Numériques Rigides et Souples à Usage Unique / Réutilisables (Béquillage 275°)",
+      "Cystoscopes Numériques Rigides Sans Gaine et Laséroscopes d'Énucléation Prostatique",
+      "Systèmes de Caméra 4K UHD, Sources de Lumière Froide 100W & Gaines à Pression Négative"
+    ],
+    "specs": [
+      "Résolution d'Imagerie : CMOS 160 000 / 520 000 Pixels & Sortie Vidéo 4K UHD 3840×2160",
+      "Optique & Durabilité : Cristal Colonnaire Haute Transmittance & Verre Saphir Inrayable",
+      "Géométrie des Canaux : Canaux Doubles & Profil Ovale d'Autorégulation de Pression",
+      "Polyvalence Chirurgicale : Mini-PCNL, Urétéroscopie, Énucléation Laser & Fœtoscopie TTTS",
+      "Connectique Intégrée : Prise Vidéo Directe Sans Faisceau de Fibres Optiques Fragile"
+    ],
+    "moq": "1 Unité"
+  },
+  {
     "id": "bandages-and-wound-care",
     "name": "Bandages Médicaux, Rubans Adhésifs & Cryothérapie",
     "shortName": "Pansements & Soins des Plaies",

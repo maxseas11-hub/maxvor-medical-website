@@ -22,6 +22,28 @@ export const CATEGORIES = [
     "moq": "1 Unit"
   },
   {
+    "id": "endoscopy-systems",
+    "name": "Rigid & Flexible Endoscopy Systems & Accessories",
+    "shortName": "Endoscopy Systems & Instruments",
+    "image": "/assets/images/cat-endoscopy-matrix.png",
+    "squareImage": "/assets/images/cat-endoscopy-square.png",
+    "tagline": "High-definition digital nephroscopes, ureteroscopes, cystoscopes, hysteroscopes, 4K camera processors, and negative pressure lithotripsy instruments",
+    "subcategories": [
+      "Digital Visual Puncture & Miniature Nephroscopes (0.9mm / 8.5/12Fr / 15/18Fr)",
+      "Rigid & Single-Use/Reusable Digital Flexible Uretero-renoscopes (275° Deflection)",
+      "Sheath-Free Rigid & Digital Flexible Cystoscopes & Resection Laserscopes",
+      "4K UHD Camera Systems, 100W Cold Light Sources & Negative Pressure Sheaths"
+    ],
+    "specs": [
+      "Imaging Resolution: 160,000 / 520,000 Pixels CMOS & 4K UHD 3840×2160 Output",
+      "Optics & Durability: High-Transmittance Columnar Crystal & Sapphire Window Seal",
+      "Channel Geometries: Dual-Channel & Oval Auto-Pressure Regulating Tube Designs",
+      "Surgical Versatility: Mini-PCNL, Ureteroscopy, Laser Enucleation & TTTS Fetoscopy",
+      "Integrated Connectors: Direct Video Plug with Zero Fragile Fiber-Optic Bundles"
+    ],
+    "moq": "1 Unit"
+  },
+  {
     "id": "bandages-and-wound-care",
     "name": "Medical Bandages, Tapes & Cold Therapy Consumables",
     "shortName": "Bandages & Wound Care Consumables",

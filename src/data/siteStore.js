@@ -10,7 +10,7 @@ import { BLOG_ARTICLES_FR, SEO_KEYWORD_TAGS_FR } from './articlesFr';
 import { en } from '../i18n/locales/en';
 import { fr } from '../i18n/locales/fr';
 
-const STORAGE_KEY = 'maxvor_cms_site_data_v9';
+const STORAGE_KEY = 'maxvor_cms_site_data_v10';
 
 export const DEFAULT_NAVIGATION = [
   { id: 'nav-home', labelEn: 'Home', labelFr: 'Accueil', path: '/', isVisible: true, hasMegaMenu: false },
@@ -234,6 +234,7 @@ function normalizeArticles(list) {
 function findStoredData() {
   const keysToTry = [
     STORAGE_KEY,
+    'maxvor_cms_site_data_v9',
     'maxvor_cms_site_data_v8',
     'maxvor_cms_site_data_v7',
     'maxvor_cms_site_data_v6',
@@ -261,10 +262,6 @@ function findStoredData() {
 // Intelligently merge stored products with codebase products so newly added products are automatically synchronized
 // and user-edited images/galleries from the admin panel are 100% preserved
 function mergeProductsWithCode(storedList, codeList) {
-  // Strip any endoscopy items
-  if (Array.isArray(storedList)) {
-    storedList = storedList.filter(p => p && p.categoryId !== 'endoscopy-systems' && p.category !== 'endoscopy-systems');
-  }
   if (!Array.isArray(storedList) || storedList.length === 0) return normalizeProducts(codeList);
   const storedMap = new Map();
   storedList.forEach(p => {
@@ -323,6 +320,40 @@ function mergeProductsWithCode(storedList, codeList) {
   });
 
   return normalizeProducts(result);
+}
+
+// Intelligently merge categories
+function mergeCategoriesWithCode(storedList, codeList) {
+  if (!Array.isArray(storedList) || storedList.length === 0) return codeList;
+  const storedMap = new Map();
+  storedList.forEach(c => {
+    if (c && c.id) storedMap.set(String(c.id).toLowerCase(), c);
+  });
+
+  const result = [];
+  const processedKeys = new Set();
+
+  codeList.forEach(codeCat => {
+    const key = String(codeCat.id).toLowerCase();
+    if (storedMap.has(key)) {
+      result.push({
+        ...codeCat,
+        ...storedMap.get(key)
+      });
+    } else {
+      result.push(codeCat);
+    }
+    processedKeys.add(key);
+  });
+
+  storedList.forEach(c => {
+    if (c && c.id && !processedKeys.has(String(c.id).toLowerCase())) {
+      result.push(c);
+      processedKeys.add(String(c.id).toLowerCase());
+    }
+  });
+
+  return result;
 }
 
 // Intelligently merge stored articles with codebase articles so newly added articles are automatically synchronized
@@ -387,8 +418,8 @@ export function getSiteData() {
     const merged = {
       productsEn: mergeProductsWithCode(parsed.productsEn, FEATURED_PRODUCTS),
       productsFr: mergeProductsWithCode(parsed.productsFr, FEATURED_PRODUCTS_FR),
-      categoriesEn: parsed.categoriesEn || CATEGORIES,
-      categoriesFr: parsed.categoriesFr || CATEGORIES_FR,
+      categoriesEn: mergeCategoriesWithCode(parsed.categoriesEn, CATEGORIES),
+      categoriesFr: mergeCategoriesWithCode(parsed.categoriesFr, CATEGORIES_FR),
       articlesEn: mergeArticlesWithCode(parsed.articlesEn, BLOG_ARTICLES),
       articlesFr: mergeArticlesWithCode(parsed.articlesFr, BLOG_ARTICLES_FR),
       navigation: normalizeNavigation(parsed.navigation || DEFAULT_NAVIGATION),
