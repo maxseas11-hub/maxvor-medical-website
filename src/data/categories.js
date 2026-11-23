@@ -1,29 +1,5 @@
 export const CATEGORIES = [
   {
-  "id": "endoscopy-systems",
-  "name": "Minimally Invasive Endoscopy Systems & Surgical Instruments",
-  "shortName": "Endoscopy Systems & Instruments",
-  "image": "/assets/images/cat-endoscopy-matrix.png",
-  "squareImage": "/assets/images/cat-endoscopy-square.png",
-  "tagline": "Comprehensive digital nephroscopes, flexible ureteroscopes, cystoscopes, hysteroscopes, 4K UHD camera towers, LED light sources, and surgical accessories",
-  "subcategories": [
-    "Digital Nephroscopy & Visual Puncture Mini-PCNL Lithotripsy Scopes",
-    "Single-Use & Reusable Digital Flexible Uretero-Renoscopes (URS / RIRS)",
-    "Sheath-Free Digital Cystoscopes & Transurethral Resection Scopes",
-    "Integrated Digital Hysteroscopy, Cold-Knife & TTTS Fetoscopy Systems",
-    "Endoscopic Equipment: 4K UHD Camera Systems, 100W LED Light Sources & Irrigators",
-    "Endoscopic Consumables: Bendable Negative Pressure Sheaths, Guidewires & Forceps"
-  ],
-  "specs": [
-    "Imaging Performance: 160,000 / 520,000 Px Digital Sensors & 4K UHD Processing",
-    "Optics & Durability: Columnar Crystal Technology & Sapphire-Sealed Tip",
-    "Specialized Channels: Dedicated Dual-Channel & Negative Pressure Lithotripsy Suction",
-    "Sterilization Compatibility: Low-Temperature Plasma & Ethylene Oxide (EO)",
-    "Clinical Applications: Urology, Gynecology, Obstetrics (TTTS), and Minimally Invasive Surgery"
-  ],
-  "moq": "1 Unit"
-},
-  {
     "id": "ultrasound-systems",
     "name": "Point-of-Care Ultrasound Diagnostic Systems",
     "shortName": "Ultrasound Diagnostic Systems",

@@ -28,7 +28,6 @@ export default function AdminOverview({ leads, siteData, onNavigateTab, onSelect
   const inProgressCount = leads.filter(l => l.status === 'In Review' || l.status === 'Replied').length;
   const contractedCount = leads.filter(l => l.status === 'Contracted').length;
   const ultrasoundCount = products.filter(p => p.category === 'point-of-care-ultrasound' || p.categoryId === 'ultrasound-systems').length;
-  const endoscopyCount = products.filter(p => p.category === 'endoscopy-systems' || p.categoryId === 'endoscopy-systems').length;
   const consumablesCount = products.filter(p => p.category === 'bandages-wound-care' || p.categoryId === 'hospital-consumables').length;
 
   const recentLeads = leads.slice(0, 5);
@@ -118,7 +117,7 @@ export default function AdminOverview({ leads, siteData, onNavigateTab, onSelect
             <span className="text-3xl font-black text-slate-900">{products.length}</span>
             <span className="text-xs font-bold text-slate-600">Active SKUs</span>
           </div>
-          <p className="text-[11px] text-muted mt-1">{ultrasoundCount} Probes + {endoscopyCount} Endoscopy + {consumablesCount} Consumables</p>
+          <p className="text-[11px] text-muted mt-1">{ultrasoundCount} Probes + {consumablesCount} Consumables</p>
         </div>
 
         {/* SEO & Knowledge Blog */}

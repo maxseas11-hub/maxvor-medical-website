@@ -1,412 +1,411 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Static Pages (7 Pages) -->
-  <url><loc>https://maxvor.com/</loc><lastmod>2026-11-19</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://maxvor.com/products</loc><lastmod>2026-11-19</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maxvor.com/faq</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/blog</loc><lastmod>2026-11-19</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maxvor.com/certifications</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://maxvor.com/about</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maxvor.com/contact</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
-  <!-- Diagnostic Ultrasound Probes & Clinical Consumables (40 Products) -->
-  <url><loc>https://maxvor.com/products/handheld-convex-ultrasound-probe-for-android</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/portable-linear-ultrasound-probe-for-vascular-access</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/hd-convex-ultrasound-scanner-for-obstetrics</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/high-frequency-linear-ultrasound-transducer-for-msk</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/handheld-color-doppler-convex-ultrasound-machine</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/handheld-color-doppler-linear-ultrasound-probe</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/32-channel-micro-convex-color-doppler-probe-pediatric</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/32-channel-micro-linear-color-doppler-transducer</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/kinesiology-muscle-tape-waterproof-elastic</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/medical-cohesive-elastic-bandage-self-adherent</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/elastic-medical-transfusion-bandage-infusion-tape</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/rigid-breathable-medical-strapping-tape</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/medical-pu-foam-underwrap-sports-pre-wrap</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/light-elastic-adhesive-cotton-bandage</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/heavy-duty-elastic-cotton-compression-bandage</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/instant-cold-compression-therapy-bandage</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/self-adherent-cohesive-cold-compression-bandage</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/instant-ice-cold-spray-for-sports-injury</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/disposable-instant-cold-ice-pack</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/medical-liquid-wound-dressing-bandage</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/reusable-hot-and-cold-therapy-ice-bag</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/biplane-linear-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/4d-wireless-bladder-volume-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/handheld-wireless-doppler-ultrasound-interchangeable-probes</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/phased-array-cardiac-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/convex-abdominal-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/high-frequency-linear-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/micro-convex-pediatric-ophthalmic-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/convex-ergonomic-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/triple-head-3in1-convex-linear-phased-array-palm-doppler-ultrasound</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/superficial-vascular-linear-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/ultra-high-frequency-uhf-linear-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/ultra-wide-field-of-view-linear-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/wide-angle-deep-penetration-convex-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/precision-musculoskeletal-msk-linear-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/interventional-puncture-guidance-linear-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/vascular-access-nerve-block-linear-palm-doppler-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/convex-grayscale-diagnostic-palm-black-and-white-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/linear-superficial-diagnostic-palm-black-and-white-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://maxvor.com/products/high-density-convex-palm-black-and-white-ultrasound-scanner</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-
-  <!-- B2B Clinical Knowledge Hub & Operating SOPs (21 Articles) -->
-  <url><loc>https://maxvor.com/blog/cold-compression-bandage-cryotherapy-rice-protocol-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/handheld-ultrasound-user-manual-terminal-specs-and-troubleshooting-sop</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/handheld-ultrasound-clinical-operation-and-scanning-procedure-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/ultrasound-probe-cleaning-disinfection-and-maintenance-sop</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/8-segment-tgc-gain-control-ultrasound-imaging-optimization</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/handheld-ultrasound-android-windows-usb-connection-setup-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/2026-b2b-handheld-ultrasound-procurement-and-tender-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/convex-vs-linear-vs-micro-convex-ultrasound-probe-selection-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/color-doppler-cfm-pdi-pw-vs-black-white-ultrasound</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/16-channel-vs-32-channel-ultrasound-architecture</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/usb-type-c-vs-battery-wireless-ultrasound-comparison</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/fast-protocol-point-of-care-ultrasound-emergency-triage-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/handheld-ultrasound-obstetric-biometry-gestational-age-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/medical-device-import-compliance-africa-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/5-popular-clinical-applications-of-cohesive-bandage-wraps-in-sports-medicine</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/how-to-apply-kinesiology-tape-step-by-step-clinical-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/the-importance-of-rigid-athletic-strapping-tape-and-when-to-use-it</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/what-is-a-medical-cohesive-bandage-self-adherent-properties-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/athletic-tape-vs-kinesiology-tape-key-differences-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/how-to-use-medical-ice-pack-cold-compress-rice-therapy-guide</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://maxvor.com/blog/how-kinesiology-tape-works-fascial-decompression-sports-performance</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://maxvor.com/products/digital-visual-puncture-mini-nephroscope</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/digital-visual-puncture-mini-nephroscope</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/products</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/digital-miniature-nephroscope-8-5-12fr</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/certifications</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/digital-miniature-nephroscope-8-5-12fr</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/faq</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/digital-standard-nephroscope-15-18fr</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/blog</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/digital-standard-nephroscope-15-18fr</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/about</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/customizable-high-resolution-nephroscope</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/contact</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/customizable-high-resolution-nephroscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/handheld-convex-ultrasound-probe-for-android</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/new-type-mini-pcnl-nephroscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/portable-linear-ultrasound-probe-for-vascular-access</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/new-type-mini-pcnl-nephroscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/hd-convex-ultrasound-scanner-for-obstetrics</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/miniature-nephroscope-8-5-12fr-84fov</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/high-frequency-linear-ultrasound-transducer-for-msk</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/miniature-nephroscope-8-5-12fr-84fov</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/handheld-color-doppler-convex-ultrasound-machine</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/rigid-digital-hd-nephroscope-520k</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/handheld-color-doppler-linear-ultrasound-probe</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/rigid-digital-hd-nephroscope-520k</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/32-channel-micro-convex-color-doppler-probe-pediatric</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/ups-12-dual-channel-rigid-digital-nephroscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/32-channel-micro-linear-color-doppler-transducer</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/ups-12-dual-channel-rigid-digital-nephroscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/kinesiology-muscle-tape-waterproof-elastic</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/usp-12-rigid-digital-uretero-renoscope-160k</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/medical-cohesive-elastic-bandage-self-adherent</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/usp-12-rigid-digital-uretero-renoscope-160k</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/elastic-medical-transfusion-bandage-infusion-tape</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/usp-12-rigid-digital-uretero-renoscope-520k</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/rigid-breathable-medical-strapping-tape</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/usp-12-rigid-digital-uretero-renoscope-520k</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/medical-pu-foam-underwrap-sports-pre-wrap</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/usp-12-dual-channel-rigid-digital-uretero-renoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/light-elastic-adhesive-cotton-bandage</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/usp-12-dual-channel-rigid-digital-uretero-renoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/heavy-duty-elastic-cotton-compression-bandage</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/rigid-optical-fiber-uretero-renoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/instant-cold-compression-therapy-bandage</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/rigid-optical-fiber-uretero-renoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/self-adherent-cohesive-cold-compression-bandage</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/single-use-digital-flexible-ureteroscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/instant-ice-cold-spray-for-sports-injury</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/single-use-digital-flexible-ureteroscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/disposable-instant-cold-ice-pack</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/reusable-digital-flexible-uretero-renoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/medical-liquid-wound-dressing-bandage</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/reusable-digital-flexible-uretero-renoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/reusable-hot-and-cold-therapy-ice-bag</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/sheath-free-rigid-digital-cystoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/biplane-linear-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/sheath-free-rigid-digital-cystoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/4d-wireless-bladder-volume-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/single-use-digital-flexible-cystoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/handheld-wireless-doppler-ultrasound-interchangeable-probes</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/single-use-digital-flexible-cystoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/phased-array-cardiac-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/reusable-digital-flexible-cystoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/convex-abdominal-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/reusable-digital-flexible-cystoscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/high-frequency-linear-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/ultra-thin-digital-laserscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/micro-convex-pediatric-ophthalmic-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/ultra-thin-digital-laserscope</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/convex-ergonomic-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/ultra-mini-digital-morcescope-22fr</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/triple-head-3in1-convex-linear-phased-array-palm-doppler-ultrasound</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/ultra-mini-digital-morcescope-22fr</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/superficial-vascular-linear-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/rigid-digital-fetoscope-ttts</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/ultra-high-frequency-uhf-linear-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/rigid-digital-fetoscope-ttts</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/ultra-wide-field-of-view-linear-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/endoscopic-tissue-morcellator-system</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/wide-angle-deep-penetration-convex-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/endoscopic-tissue-morcellator-system</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/precision-musculoskeletal-msk-linear-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/digital-endoscope-image-processor-1080p</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/interventional-puncture-guidance-linear-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/digital-endoscope-image-processor-1080p</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/vascular-access-nerve-block-linear-palm-doppler-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/4k-ultra-hd-medical-endoscopic-camera-system</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/convex-grayscale-diagnostic-palm-black-and-white-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/4k-ultra-hd-medical-endoscopic-camera-system</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/linear-superficial-diagnostic-palm-black-and-white-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/medical-high-power-led-cold-light-source</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://maxvor.com/products/high-density-convex-palm-black-and-white-ultrasound-scanner</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/medical-high-power-led-cold-light-source</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/cold-compression-bandage-cryotherapy-rice-protocol-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/intelligent-endoscopic-perfusion-suction-irrigator</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/handheld-ultrasound-user-manual-terminal-specs-and-troubleshooting-sop</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/intelligent-endoscopic-perfusion-suction-irrigator</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/handheld-ultrasound-clinical-operation-and-scanning-procedure-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/digital-visual-sheathing-lithotripsy-workstation</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/ultrasound-probe-cleaning-disinfection-and-maintenance-sop</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/digital-visual-sheathing-lithotripsy-workstation</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/8-segment-tgc-gain-control-ultrasound-imaging-optimization</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/single-use-bendable-negative-pressure-sheath</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/handheld-ultrasound-android-windows-usb-connection-setup-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/single-use-bendable-negative-pressure-sheath</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/2026-b2b-handheld-ultrasound-procurement-and-tender-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/products/medical-hydrophilic-zebra-guidewire</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/convex-vs-linear-vs-micro-convex-ultrasound-probe-selection-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://maxvor.com/fr/products/medical-hydrophilic-zebra-guidewire</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://maxvor.com/blog/color-doppler-cfm-pdi-pw-vs-black-white-ultrasound</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/16-channel-vs-32-channel-ultrasound-architecture</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/usb-type-c-vs-battery-wireless-ultrasound-comparison</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/fast-protocol-point-of-care-ultrasound-emergency-triage-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/handheld-ultrasound-obstetric-biometry-gestational-age-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/medical-device-import-compliance-africa-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/5-popular-clinical-applications-of-cohesive-bandage-wraps-in-sports-medicine</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/how-to-apply-kinesiology-tape-step-by-step-clinical-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/the-importance-of-rigid-athletic-strapping-tape-and-when-to-use-it</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/what-is-a-medical-cohesive-bandage-self-adherent-properties-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/athletic-tape-vs-kinesiology-tape-key-differences-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/how-to-use-medical-ice-pack-cold-compress-rice-therapy-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://maxvor.com/blog/how-kinesiology-tape-works-fascial-decompression-sports-performance</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

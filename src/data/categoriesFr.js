@@ -1,29 +1,5 @@
 export const CATEGORIES_FR = [
   {
-  "id": "endoscopy-systems",
-  "name": "Systèmes d’Endoscopie Mini-Invasive & Instruments Chirurgicaux",
-  "shortName": "Systèmes d’Endoscopie & Instruments",
-  "image": "/assets/images/cat-endoscopy-matrix.png",
-  "squareImage": "/assets/images/cat-endoscopy-square.png",
-  "tagline": "Gamme complète de néphroscopes numériques, urétéroscopes souples, cystoscopes, hystéroscopes, colonnes vidéo 4K UHD, sources de lumière LED et accessoires chirurgicaux",
-  "subcategories": [
-    "Néphroscopes Numériques & Systèmes Mini-PCNL de Lithotripsie par Ponction Visuelle",
-    "Urétéro-Rénoscopes Numériques Souples à Usage Unique & Réutilisables (URS / RIRS)",
-    "Cystoscopes Numériques Rigides sans Gaine & Scopes de Résection Transurétrale",
-    "Hystéroscopes Numériques Intégrés, Lame Froide & Systèmes de Fœtoscopie (STT)",
-    "Équipements d’Endoscopie : Caméras 4K UHD, Sources LED 100W & Pompes d’Irrigation",
-    "Consommables Endoscopiques : Gaines d’Aspiration à Pression Négative, Guides & Pinces"
-  ],
-  "specs": [
-    "Performance d’Imagerie : Capteurs Numériques 160 000 / 520 000 Px & Traitement 4K UHD",
-    "Optique & Durabilité : Technologie Cristal Colonnaire & Lentille Distale en Saphir",
-    "Canaux Dédiés : Double Canal Opératoire & Aspiration de Lithotripsie sous Pression Négative",
-    "Compatibilité Stérilisation : Plasma Basse Température & Oxyde d’Éthylène (ETO)",
-    "Applications Cliniques : Urologie, Gynécologie, Obstétrique (STT) et Chirurgie Mini-Invasive"
-  ],
-  "moq": "1 Unité"
-},
-  {
     "id": "ultrasound-systems",
     "name": "Systèmes d'Échographie POCUS Portables",
     "shortName": "Échographie Portable & Sondes",
@@ -59,11 +35,11 @@ export const CATEGORIES_FR = [
       "Poches de Froid Instantané, Pansements Liquides & Poches Chaud/Froid"
     ],
     "specs": [
-      "Matériaux : 100% Coton, Mousse PU Respirante, Spandex, Adhésif Hypoallergénique",
-      "Caractéristiques : Auto-adhérent (ne colle pas à la peau/poils), Déchirable à la main",
-      "Performance Cryothérapie : Refroidissement actif jusqu'à 2h, baisse de 5°C en 20 min",
-      "Conditionnement : Boîtes médicales et cartons d'exportation standard",
-      "Applications Cliniques : Premiers secours, Protocole R.I.C.E., Traumatologie sportive"
+      "Matériaux : 100% Coton, Mousse PU Respirante, Élasthanne, Adhésif Hypoallergénique",
+      "Caractéristiques Clés : Auto-Adhérent (Sans colle sur peau/poils), Déchirable à la main",
+      "Performance Cryothérapie : Refroidissement continu jusqu'à 2h, baisse de 5°C en 20min",
+      "Conditionnement : Boîte médicale unitaire & carton d'exportation standard",
+      "Applications Cliniques : Premiers secours d'urgence, traumatologie sportive R.I.C.E., pansement"
     ],
     "moq": "1 Carton"
   }

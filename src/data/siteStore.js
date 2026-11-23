@@ -10,7 +10,7 @@ import { BLOG_ARTICLES_FR, SEO_KEYWORD_TAGS_FR } from './articlesFr';
 import { en } from '../i18n/locales/en';
 import { fr } from '../i18n/locales/fr';
 
-const STORAGE_KEY = 'maxvor_cms_site_data_v8';
+const STORAGE_KEY = 'maxvor_cms_site_data_v9';
 
 export const DEFAULT_NAVIGATION = [
   { id: 'nav-home', labelEn: 'Home', labelFr: 'Accueil', path: '/', isVisible: true, hasMegaMenu: false },
@@ -261,6 +261,10 @@ function findStoredData() {
 // Intelligently merge stored products with codebase products so newly added products are automatically synchronized
 // and user-edited images/galleries from the admin panel are 100% preserved
 function mergeProductsWithCode(storedList, codeList) {
+  // Strip any endoscopy items
+  if (Array.isArray(storedList)) {
+    storedList = storedList.filter(p => p && p.categoryId !== 'endoscopy-systems' && p.category !== 'endoscopy-systems');
+  }
   if (!Array.isArray(storedList) || storedList.length === 0) return normalizeProducts(codeList);
   const storedMap = new Map();
   storedList.forEach(p => {
