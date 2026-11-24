@@ -58,7 +58,7 @@ Write-Host "[*] Deployment Package: $ZipFile" -ForegroundColor Green
 Write-Host "[*] Target Directory  : $TargetDir" -ForegroundColor Green
 Write-Host ""
 
-# 3. Create pre-deployment snapshot of App_Data database
+# 3. Create pre-deployment snapshot of App_Data database & sanitize legacy B2B wording
 $appDataDir = Join-Path $TargetDir "App_Data"
 $uploadsDir = Join-Path $TargetDir "assets\uploads"
 $backupDir  = Join-Path $TargetDir "App_Data\snapshots"
@@ -73,6 +73,30 @@ if (Test-Path $appDataDir) {
     if (Test-Path $currentJson) {
         Copy-Item -Path $currentJson -Destination $snapshotJson -Force
         Write-Host "[SNAPSHOT] Pre-deployment backup created: site_data_snapshot_$timestamp.json" -ForegroundColor DarkCyan
+
+        # Automatically sanitize legacy B2B & wholesale terms from server database while 100% preserving custom edits/images
+        try {
+            $rawContent = [System.IO.File]::ReadAllText($currentJson, [System.Text.Encoding]::UTF8)
+            $cleaned = $rawContent -replace '\bB2B\b', 'Direct' `
+                                  -replace 'Wholesale Product Catalog', 'Official Product Catalog' `
+                                  -replace 'Catalogue de Vente en Gros B2B', 'Catalogue Officiel des Produits' `
+                                  -replace 'B2B Sourcing', 'Direct Sourcing' `
+                                  -replace 'B2B Export', 'Global Export' `
+                                  -replace 'B2B Procurement', 'Medical Procurement' `
+                                  -replace 'B2B Logistics', 'Global Logistics' `
+                                  -replace 'B2B Wholesale', 'Direct Supply' `
+                                  -replace 'B2B Pricing', 'Pricing & Specs' `
+                                  -replace 'B2B Support', 'Customer Support' `
+                                  -replace 'Assistance B2B', 'Support Client' `
+                                  -replace 'Tarif Grossiste B2B', 'Devis & Tarifs' `
+                                  -replace '2026-b2b-handheld-ultrasound-procurement-and-tender-guide', '2026-handheld-ultrasound-procurement-guide'
+            
+            $utf8NoBom = New-Object System.Text.UTF8Encoding $false
+            [System.IO.File]::WriteAllText($currentJson, $cleaned, $utf8NoBom)
+            Write-Host "[CLEANSER] In-place sanitized legacy B2B wording in App_Data/site_data.json" -ForegroundColor Green
+        } catch {
+            Write-Host "[WARN] Could not sanitize site_data.json: $_" -ForegroundColor Yellow
+        }
     }
 }
 
