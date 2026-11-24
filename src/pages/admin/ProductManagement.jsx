@@ -78,7 +78,11 @@ export default function ProductManagement() {
       p.id?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       p.seoKeywords?.toLowerCase().includes(searchTerm.toLowerCase());
 
-    const matchesCat = selectedCategory === 'ALL' || p.category === selectedCategory || p.categoryId === selectedCategory;
+    const matchesCat = selectedCategory === 'ALL' || 
+      p.category === selectedCategory || 
+      p.categoryId === selectedCategory ||
+      (selectedCategory === 'ultrasound-systems' && (p.category === 'point-of-care-ultrasound' || p.categoryId === 'ultrasound-systems')) ||
+      (selectedCategory === 'bandages-and-wound-care' && (p.category === 'bandages-wound-care' || p.categoryId === 'bandages-and-wound-care'));
 
     return matchesSearch && matchesCat;
   });
@@ -499,8 +503,9 @@ export default function ProductManagement() {
             className="px-3 py-2 rounded-xl bg-slate-50 border border-border-soft text-xs font-medium text-slate-800 focus:outline-none focus:border-secondary"
           >
             <option value="ALL">All Categories ({productList.length})</option>
-            <option value="point-of-care-ultrasound">Point-of-Care Ultrasound Probes</option>
-            <option value="bandages-wound-care">Medical Bandages & Consumables</option>
+            <option value="ultrasound-systems">Point-of-Care Ultrasound Probes</option>
+            <option value="endoscopy-systems">Rigid & Flexible Endoscopy Systems</option>
+            <option value="bandages-and-wound-care">Medical Bandages & Consumables</option>
           </select>
         </div>
       </div>
@@ -533,9 +538,19 @@ export default function ProductManagement() {
                       <div className="flex items-center gap-3">
                         <div className="w-12 h-12 rounded-xl bg-white border border-border-soft p-1 shrink-0 overflow-hidden flex items-center justify-center">
                           <img 
-                            src={p.image} 
+                            src={p.image || '/assets/images/placeholder.svg'} 
                             alt={p.name} 
                             className="w-full h-full object-contain"
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              if (p.categoryId === 'bandages-and-wound-care' || p.category === 'bandages-and-wound-care') {
+                                e.target.src = '/assets/images/cat-bandages-matrix.png';
+                              } else if (p.categoryId === 'endoscopy-systems' || p.category === 'endoscopy-systems') {
+                                e.target.src = '/assets/images/cat-endoscopy-matrix.png';
+                              } else {
+                                e.target.src = '/assets/images/cat-ultrasound-matrix.png';
+                              }
+                            }}
                           />
                         </div>
                         <div className="min-w-0">
@@ -546,7 +561,7 @@ export default function ProductManagement() {
                     </td>
                     <td className="py-3.5 px-4">
                       <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                        {p.category === 'point-of-care-ultrasound' ? 'Ultrasound' : 'Consumable'}
+                        {p.categoryId === 'endoscopy-systems' || p.category === 'endoscopy-systems' ? 'Endoscopy' : (p.categoryId === 'ultrasound-systems' || p.category === 'point-of-care-ultrasound' ? 'Ultrasound' : 'Wound Care')}
                       </span>
                     </td>
                     <td className="py-3.5 px-4 font-medium text-slate-700">

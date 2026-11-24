@@ -31,7 +31,21 @@ export default function ProductQuickViewModal({ isOpen, onClose, product, onOpen
           {/* Top Info */}
           <div className="flex flex-col sm:flex-row gap-6">
             <div className="w-full sm:w-48 h-48 rounded-2xl bg-slate-50 overflow-hidden shrink-0 border border-border-soft flex items-center justify-center p-2">
-              <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
+              <img 
+                src={product.image || '/assets/images/placeholder.svg'} 
+                alt={product.name} 
+                className="w-full h-full object-contain" 
+                onError={(e) => {
+                  e.target.onerror = null;
+                  if (product.categoryId === 'bandages-and-wound-care' || product.category === 'bandages-and-wound-care') {
+                    e.target.src = '/assets/images/cat-bandages-matrix.png';
+                  } else if (product.categoryId === 'endoscopy-systems' || product.category === 'endoscopy-systems') {
+                    e.target.src = '/assets/images/cat-endoscopy-matrix.png';
+                  } else {
+                    e.target.src = '/assets/images/cat-ultrasound-matrix.png';
+                  }
+                }}
+              />
             </div>
             <div className="space-y-2">
               <span className="text-xs font-bold uppercase tracking-wider text-secondary">

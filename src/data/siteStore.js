@@ -167,13 +167,25 @@ function normalizeProducts(list) {
   if (!Array.isArray(list)) return [];
   return list.map(p => {
     let gallery = Array.isArray(p.gallery) && p.gallery.length > 0 ? p.gallery : (p.image ? [p.image] : []);
+    let defaultCatImg = '/assets/images/cat-ultrasound-matrix.png';
+    if (p.categoryId === 'bandages-and-wound-care' || p.category === 'bandages-and-wound-care') {
+      defaultCatImg = '/assets/images/cat-bandages-matrix.png';
+    } else if (p.categoryId === 'endoscopy-systems' || p.category === 'endoscopy-systems') {
+      defaultCatImg = '/assets/images/cat-endoscopy-matrix.png';
+    }
+
+    let mainImg = p.image || gallery[0] || defaultCatImg;
+    if (mainImg && !mainImg.startsWith('/') && !mainImg.startsWith('http') && !mainImg.startsWith('data:')) {
+      mainImg = '/' + mainImg;
+    }
+
     return {
       ...p,
       id: p.id || p.slug,
       slug: p.slug || p.id,
-      category: p.category || (p.categoryId === 'ultrasound-systems' ? 'point-of-care-ultrasound' : 'bandages-wound-care'),
-      image: p.image || gallery[0] || '/assets/images/healson-hs-up20-convex-bw.png',
-      gallery: gallery,
+      category: p.category || (p.categoryId === 'ultrasound-systems' ? 'point-of-care-ultrasound' : (p.categoryId === 'endoscopy-systems' ? 'endoscopy-systems' : 'bandages-wound-care')),
+      image: mainImg,
+      gallery: gallery.length > 0 ? gallery : [mainImg],
       seoTitle: p.seoTitle || p.seoTitleEn || (p.name ? `${p.name} | MAXVOR` : ''),
       seoKeywords: p.seoKeywords || p.seoKeywordsEn || '',
       seoDescription: p.seoDescription || p.seoDescriptionEn || p.shortDesc || '',
@@ -290,11 +302,19 @@ function mergeProductsWithCode(storedList, codeList) {
       // Combine user gallery and code gallery, keeping user-added images at the front
       const mergedGallery = Array.from(new Set([...userGallery, ...codeGallery]));
 
+      let finalImg = matchedStored.image;
+      if (!finalImg || finalImg.includes('placeholder')) {
+        finalImg = codeItem.image || mergedGallery[0];
+      }
+      if (finalImg && !finalImg.startsWith('/') && !finalImg.startsWith('http') && !finalImg.startsWith('data:')) {
+        finalImg = '/' + finalImg;
+      }
+
       result.push({
         ...codeItem,
         ...matchedStored,
-        image: matchedStored.image || codeItem.image || mergedGallery[0],
-        gallery: mergedGallery.length > 0 ? mergedGallery : [codeItem.image || '/assets/images/placeholder.svg'],
+        image: finalImg,
+        gallery: mergedGallery.length > 0 ? mergedGallery : [finalImg || '/assets/images/placeholder.svg'],
         name: matchedStored.name || codeItem.name,
         detailedSpecs: matchedStored.detailedSpecs || codeItem.detailedSpecs,
         keyFeatures: matchedStored.keyFeatures || codeItem.keyFeatures,
@@ -485,10 +505,33 @@ export async function fetchServerSiteData() {
     const res = await fetch('/api/site-data.ashx');
     if (res.ok) {
       const serverData = await res.json();
-      if (serverData && serverData.productsEn && Array.isArray(serverData.productsEn)) {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(serverData));
-        window.dispatchEvent(new CustomEvent('maxvor_site_data_updated', { detail: serverData }));
-        return serverData;
+      if (serverData && typeof serverData === 'object') {
+        const mergedServerData = {
+          ...serverData,
+          productsEn: mergeProductsWithCode(serverData.productsEn, FEATURED_PRODUCTS),
+          productsFr: mergeProductsWithCode(serverData.productsFr, FEATURED_PRODUCTS_FR),
+          categoriesEn: mergeCategoriesWithCode(serverData.categoriesEn, CATEGORIES),
+          categoriesFr: mergeCategoriesWithCode(serverData.categoriesFr, CATEGORIES_FR),
+          articlesEn: mergeArticlesWithCode(serverData.articlesEn, BLOG_ARTICLES),
+          articlesFr: mergeArticlesWithCode(serverData.articlesFr, BLOG_ARTICLES_FR),
+          navigation: normalizeNavigation(serverData.navigation || DEFAULT_NAVIGATION),
+          seo: serverData.seo || DEFAULT_SEO_SETTINGS,
+          pageContent: serverData.pageContent || DEFAULT_PAGE_CONTENT,
+          lastUpdated: new Date().toISOString()
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(mergedServerData));
+        window.dispatchEvent(new CustomEvent('maxvor_site_data_updated', { detail: mergedServerData }));
+        
+        // Auto-persist merged 73 products back to Windows Server IIS so backend JSON stays up to date
+        try {
+          fetch('/api/site-data.ashx', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json; charset=utf-8' },
+            body: JSON.stringify(mergedServerData)
+          }).catch(() => {});
+        } catch {}
+
+        return mergedServerData;
       }
     }
   } catch (e) {

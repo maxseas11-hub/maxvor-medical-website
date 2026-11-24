@@ -130,7 +130,13 @@ export default function ProductDetailPage({ onOpenRfq, onQuickView }) {
                 className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = '/assets/images/placeholder.svg';
+                  if (product.categoryId === 'bandages-and-wound-care' || product.category === 'bandages-and-wound-care') {
+                    e.target.src = '/assets/images/cat-bandages-matrix.png';
+                  } else if (product.categoryId === 'endoscopy-systems' || product.category === 'endoscopy-systems') {
+                    e.target.src = '/assets/images/cat-endoscopy-matrix.png';
+                  } else {
+                    e.target.src = '/assets/images/cat-ultrasound-matrix.png';
+                  }
                 }}
               />
               
