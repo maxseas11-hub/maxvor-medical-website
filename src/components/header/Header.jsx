@@ -31,7 +31,7 @@ export default function Header({ onOpenRfq }) {
       label: lang === 'fr' ? 'FAQ (Foire Aux Questions)' : 'FAQ (Frequently Asked Questions)',
       desc: lang === 'fr' 
         ? 'Questions fréquentes sur l’approvisionnement, MOQ, échantillons et logistique' 
-        : 'Common questions on B2B sourcing, MOQs, sample orders & shipping terms',
+        : 'Common questions on orders, product specs, samples & shipping terms',
       path: '/faq',
       icon: HelpCircle,
       badge: lang === 'fr' ? 'Recommandé' : 'Popular'
@@ -173,7 +173,7 @@ export default function Header({ onOpenRfq }) {
                               {lang === 'fr' ? 'Équipements Médicaux & Consommables MAXVOR' : 'MAXVOR Devices & Clinical Supplies'}
                             </span>
                             <h4 className="text-base font-bold text-primary">
-                              {lang === 'fr' ? 'Catégories Autorisées pour l’Exportation B2B' : 'Authorized Product Categories for B2B Export'}
+                              {lang === 'fr' ? 'Catégories de Produits Médicaux Autorisées' : 'Authorized Medical Product Categories'}
                             </h4>
                           </div>
                           <Link 
@@ -246,7 +246,7 @@ export default function Header({ onOpenRfq }) {
                       <div className="absolute left-0 top-full w-[420px] bg-white rounded-2xl shadow-dropdown border border-border-soft p-3 z-50 animate-in fade-in-50 duration-150">
                         <div className="p-2.5 pb-2 mb-1 border-b border-border-soft">
                           <span className="text-[11px] font-bold uppercase tracking-wider text-secondary block">
-                            {lang === 'fr' ? 'Ressources & Guides B2B' : 'MAXVOR Sourcing Resources'}
+                            {lang === 'fr' ? 'Ressources & Guides Médicaux' : 'MAXVOR Medical Resources'}
                           </span>
                         </div>
 

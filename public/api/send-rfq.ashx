@@ -71,7 +71,7 @@ public class SendRfqHandler : IHttpHandler {
             body.Append("<a href='mailto:" + buyerEmail + "?subject=Re: [MAXVOR Quotation] " + inquiryId + "' style='display:inline-block;background:#0d9488;color:#ffffff;text-decoration:none;padding:12px 28px;border-radius:8px;font-weight:bold;font-size:15px;'>✉️ 一键直接回复给买家 (" + buyerName + ": " + buyerEmail + ")</a>");
             body.Append("</div>");
             body.Append("</div>");
-            body.Append("<div style='background:#f1f5f9;padding:12px;text-align:center;font-size:11px;color:#64748b;'>This is an official B2B RFQ notification from MAXVOR (maxvor.com)</div>");
+            body.Append("<div style='background:#f1f5f9;padding:12px;text-align:center;font-size:11px;color:#64748b;'>This is an official inquiry notification from MAXVOR (maxvor.com)</div>");
             body.Append("</div>");
 
             string subject = "[MAXVOR RFQ] " + buyerName + " - " + inquiryId;

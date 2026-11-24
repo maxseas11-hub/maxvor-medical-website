@@ -70,8 +70,8 @@ export default function Hero({ onOpenRfq }) {
             {/* Subtitle */}
             <p className="text-sm sm:text-base xl:text-lg text-slate-600 max-w-xl leading-relaxed">
               {lang === 'fr'
-                ? 'Connecter les acheteurs internationaux avec des produits médicaux fiables, des solutions d’approvisionnement flexibles et un support B2B efficace.'
-                : 'Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient B2B supply support.'}
+                ? 'Connecter les acheteurs internationaux avec des produits médicaux fiables, des solutions d’équipement médical fiables et un support client réactif.'
+                : 'Connecting global buyers with reliable medical products, reliable medical equipment solutions, and dedicated customer support.'}
             </p>
 
             {/* 3 Value Props */}

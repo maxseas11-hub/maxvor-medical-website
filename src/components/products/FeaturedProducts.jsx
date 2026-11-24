@@ -28,7 +28,7 @@ export default function FeaturedProducts({ onOpenRfq, onQuickView }) {
         <SectionHeading
           badge={lang === 'fr' ? 'Catalogue de Produits Autorisés' : 'Authorized Product Portfolio'}
           title={lang === 'fr' ? 'Équipements Médicaux & Consommables de Soins' : 'Medical Equipment & Clinical Care Supplies'}
-          subtitle={lang === 'fr' ? 'Dispositifs de diagnostic par échographie portable et consommables hospitaliers de traumatologie et de soins des plaies pour l’exportation B2B.' : 'Authorized point-of-care diagnostic ultrasound systems, hospital-grade compression bandages, and emergency wound care consumables for direct B2B export.'}
+          subtitle={lang === 'fr' ? 'Dispositifs de diagnostic par échographie portable et consommables hospitaliers de traumatologie et de soins des plaies pour l’exportation directe.' : 'Authorized point-of-care diagnostic ultrasound systems, hospital-grade compression bandages, and emergency wound care consumables for direct global delivery.'}
         />
 
         {/* Tabs Filter Bar */}

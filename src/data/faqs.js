@@ -26,7 +26,7 @@ export const FAQ_CATEGORIES = [
   {
     id: 'pricing-terms',
     nameEn: 'Pricing & Commercial Terms',
-    nameFr: 'Tarification & Modalités B2B',
+    nameFr: 'Tarification & Modalités de Commande',
     descEn: 'Tiered wholesale discounts, proforma validity, and international payment options.',
     descFr: 'Remises quantitatives de gros, validité des proformas et modes de paiement.',
     icon: 'DollarSign'
@@ -171,7 +171,7 @@ export const FAQ_ITEMS = [
     categoryId: 'pricing-terms',
     questionEn: 'Do you offer tiered pricing discounts for bulk hospital supply contracts and distributors?',
     questionFr: 'Proposez-vous des remises tarifaires dégressives pour les commandes groupées et distributeurs ?',
-    answerEn: 'Yes. We provide transparent volume-tiered pricing schedules. As order volumes scale to master-case, multi-pallet, or container loads, unit prices decrease significantly. Contact our B2B export desk for customized tender price matrices.',
+    answerEn: 'Yes. We provide transparent volume-tiered pricing schedules. As order volumes scale to master-case, multi-pallet, or container loads, unit prices decrease significantly. Contact our customer support team for customized order pricing details.',
     answerFr: 'Oui. Nous proposons des grilles tarifaires dégressives selon le volume. Les prix unitaires sont optimisés pour les commandes par palettes ou conteneurs complets. Contactez notre service export pour obtenir une matrice de prix adaptée à votre marché.',
     popular: false
   },

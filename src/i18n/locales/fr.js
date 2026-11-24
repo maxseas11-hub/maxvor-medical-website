@@ -48,7 +48,7 @@ export const fr = {
   metricQualityVal: 'Normes ISO & Directives CE',
   metricInspection: 'Contrôle à l’Export',
   metricInspectionVal: '100% Inspecté',
-  metricLogistics: 'Logistique B2B Mondiale',
+  metricLogistics: 'Logistique Mondiale & Expédition',
   metricLogisticsVal: 'Export FOB / CIF',
   metricResponse: 'Délai de Réponse RFQ',
   metricResponseVal: '< 12 Heures',
@@ -62,7 +62,7 @@ export const fr = {
   
   // Product Page
   productsTitle: 'Catalogue d’Équipements & Dispositifs Médicaux',
-  productsSubtitle: 'Instruments de diagnostic autorisés, sondes d’échographie portables et fournitures cliniques disponibles pour vente en gros B2B et approvisionnement hospitalier.',
+  productsSubtitle: 'Instruments de diagnostic certifiés, sondes d’échographie portables et fournitures cliniques de haute précision.',
   filterAllCategories: 'Toutes les Catégories',
   searchPlaceholder: 'Rechercher par mot-clé, modèle ou application clinique...',
   noProductsFound: 'Aucun produit ne correspond à votre recherche.',
@@ -80,7 +80,7 @@ export const fr = {
   productMoqLabel: 'MOQ Standard :',
   productLeadTimeLabel: 'Délai d’Expédition :',
   productLeadTimeVal: '3 à 10 Jours Ouvrables',
-  productInquiryBtn: 'Demander un Tarif Grossiste B2B',
+  productInquiryBtn: 'Demander un Devis & Tarifs',
   productDatasheetBtn: 'Télécharger le Dossier Technique',
   keyHighlightsTitle: 'Points Forts & Caractéristiques Techniques',
   techSpecsTitle: 'Spécifications Techniques Complètes',
@@ -146,7 +146,7 @@ export const fr = {
   formSuccessMsg: 'Merci ! Votre demande de cotation a bien été enregistrée. Notre équipe export vous contactera sous 12 heures avec une offre chiffrée et la documentation requise.',
   
   // Blog / Resources Hub
-  blogPageTitle: 'Centre de Ressources Cliniques & Connaissances B2B',
+  blogPageTitle: 'Centre de Ressources Cliniques & Connaissances',
   blogPageSubtitle: 'Analyses d’ingénierie approfondies, guides d’applications cliniques, guides réglementaires d’importation et retours d’expérience terrain.',
   blogSearchTagsTitle: 'Recherche par Intention d’Achat & Thématique Technique :',
   blogReadArticle: 'Lire l’Article Technique Complet',

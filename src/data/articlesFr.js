@@ -12,7 +12,7 @@ export const SEO_KEYWORD_TAGS_FR = [
     "count": 6
   },
   {
-    "id": "b2b-procure",
+    "id": "medical-procure",
     "label": "Guide Achat & Appels d’Offres Médicaux",
     "searchVolume": "Commercial",
     "count": 5
@@ -55,7 +55,7 @@ export const SEO_KEYWORD_TAGS_FR = [
   },
   {
     "id": "cohesive-bandage-guide",
-    "label": "Applications des Bandes Cohésives & Achat B2B",
+    "label": "Applications des Bandes Cohésives & Guide d’Achat",
     "searchVolume": "Haute Intention",
     "count": 4
   },
@@ -216,11 +216,11 @@ export const BLOG_ARTICLES_FR = [
     }
   },
   {
-    "id": "2026-b2b-handheld-ultrasound-procurement-and-tender-guide",
-    "title": "Guide d’Approvisionnement et d’Appels d’Offres 2026 : Échographes Portables B2B & Grille Tarifaire Usine",
-    "seoTitle": "Guide d’Achat Échographes Portables B2B 2026",
+    "id": "2026-handheld-ultrasound-procurement-guide",
+    "title": "Guide d’Approvisionnement Clinique 2026 : Échographes Portables & Caractéristiques Techniques",
+    "seoTitle": "Guide d’Achat Échographes Portables 2026",
     "seoMetaDesc": "Guide d’achat complet 2026 pour directeurs d’hôpitaux, distributeurs et appels d’offres publics. Matrice de sélection technique, grilles tarifaires et MOQ usine.",
-    "primaryKeyword": "Guide Achat Échographe Portable B2B",
+    "primaryKeyword": "Guide Achat Échographe Portable",
     "secondaryKeywords": [
       "Appel d'offres hôpital échographie POCUS",
       "Prix grossiste distributeur échographe",
@@ -627,9 +627,9 @@ export const BLOG_ARTICLES_FR = [
   },
   {
     "id": "what-is-a-medical-cohesive-bandage-self-adherent-properties-guide",
-    "title": "Qu’est-ce qu’une Bande Cohésive Médicale ? Propriétés Auto-Adhérentes, Matériaux & Normes d’Achat B2B",
+    "title": "Qu’est-ce qu’une Bande Cohésive Médicale ? Propriétés Auto-Adhérentes, Matériaux & Normes d’Achat",
     "seoTitle": "Qu’est-ce qu’une Bande Cohésive Médicale ? Guide Complet",
-    "seoMetaDesc": "Guide technique sur les bandes cohésives médicales : auto-adhérence sans agrafes ni colle, tissage non-tissé/coton élastique, options sans latex et critères B2B.",
+    "seoMetaDesc": "Guide technique sur les bandes cohésives médicales : auto-adhérence sans agrafes ni colle, tissage non-tissé/coton élastique, options sans latex et critères de qualité.",
     "primaryKeyword": "Définition Bande Cohésive Médicale Auto Adhérente",
     "secondaryKeywords": [
       "Propriétés bande auto-adhérente sans latex",

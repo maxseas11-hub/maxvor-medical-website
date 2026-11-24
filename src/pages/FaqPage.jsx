@@ -230,7 +230,7 @@ export default function FaqPage({ onOpenRfq }) {
                   {activeCategory === 'all'
                     ? (lang === 'fr' 
                         ? 'Explorez l’ensemble de nos questions fréquentes ou utilisez les filtres par catégorie pour cibler votre besoin.' 
-                        : 'Explore our complete list of B2B procurement questions or filter by specific category above to narrow your inquiry.')
+                        : 'Explore our complete list of frequently asked questions or filter by specific category above to find exact answers.')
                     : (lang === 'fr'
                         ? FAQ_CATEGORIES.find(c => c.id === activeCategory)?.descFr
                         : FAQ_CATEGORIES.find(c => c.id === activeCategory)?.descEn)}
@@ -257,7 +257,7 @@ export default function FaqPage({ onOpenRfq }) {
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 text-white space-y-4 shadow-card">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[11px] font-bold text-secondary-light">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>{lang === 'fr' ? 'Service Export Dédié' : 'Dedicated B2B Desk'}</span>
+                <span>{lang === 'fr' ? 'Service Client Dédié' : 'Dedicated Support Desk'}</span>
               </div>
               <h4 className="text-base font-bold leading-snug">
                 {lang === 'fr' ? 'Besoin d’un Devis Express pour Appel d’Offres ?' : 'Preparing a Hospital Tender or Wholesale Order?'}

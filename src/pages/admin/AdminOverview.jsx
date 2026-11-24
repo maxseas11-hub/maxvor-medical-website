@@ -54,7 +54,7 @@ export default function AdminOverview({ leads, siteData, onNavigateTab, onSelect
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-[#0A2540] to-slate-900 text-white p-6 sm:p-8 rounded-3xl shadow-lg border border-slate-800 relative overflow-hidden">
         <div className="relative z-10 space-y-2">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-bold border border-secondary/30">
-            <Activity className="w-3.5 h-3.5" /> Live B2B Operations Hub
+            <Activity className="w-3.5 h-3.5" /> Live Operations & Inquiries Hub
           </div>
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
             MAXVOR Management Dashboard

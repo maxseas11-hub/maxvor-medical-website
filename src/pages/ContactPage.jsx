@@ -44,7 +44,7 @@ export default function ContactPage() {
         
         {/* Page Top Heading */}
         <SectionHeading
-          badge={lang === 'fr' ? 'Pôle Exportation B2B Direct' : 'Direct B2B Sourcing Desk'}
+          badge={lang === 'fr' ? 'Support Client & Commandes' : 'Direct Customer & Orders Desk'}
           title={t('contactPageTitle')}
           subtitle={t('contactPageSubtitle')}
         />

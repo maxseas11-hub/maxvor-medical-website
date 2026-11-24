@@ -436,7 +436,7 @@ export default function BlogPage({ onOpenRfq }) {
         <div className="mt-14 bg-slate-900 text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 text-center md:text-left">
             <span className="text-xs font-bold text-secondary uppercase tracking-wider">
-              {lang === 'fr' ? 'Sourcing B2B & Appels d’Offres Médicaux' : 'B2B Sourcing & Tender Inquiries'}
+              {lang === 'fr' ? 'Guides Médicaux & Commandes' : 'Medical Guides & Orders'}
             </span>
             <h3 className="text-xl sm:text-2xl font-black">
               {lang === 'fr' ? 'Besoin d’un Cahier des Charges Spécifique pour Votre Hôpital ?' : 'Need Technical Specifications for an Upcoming Healthcare Tender?'}

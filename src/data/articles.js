@@ -12,8 +12,8 @@ export const SEO_KEYWORD_TAGS = [
     "count": 6
   },
   {
-    "id": "b2b-procure",
-    "label": "B2B Medical Equipment Procurement & Tender Guide",
+    "id": "medical-procure",
+    "label": "Medical Equipment Procurement & Selection Guide",
     "searchVolume": "Commercial",
     "count": 5
   },
@@ -220,13 +220,13 @@ export const BLOG_ARTICLES = [
     }
   },
   {
-    "id": "2026-b2b-handheld-ultrasound-procurement-and-tender-guide",
-    "title": "2026 B2B Handheld Ultrasound Procurement & Tender Guide: Model Selection, Spec Matrix & Direct Factory Terms",
+    "id": "2026-handheld-ultrasound-procurement-guide",
+    "title": "2026 Handheld Ultrasound Procurement & Technical Guide: Model Selection, Spec Matrix & Clinical Features",
     "seoTitle": "2026 Handheld Ultrasound Procurement & Hospital Tender Guide",
-    "seoMetaDesc": "Comprehensive B2B buying guide for hospital procurement directors and distributors. Technical selection matrix, 16 vs 32 channel beamforming, and factory direct export terms.",
+    "seoMetaDesc": "Comprehensive buying guide for clinicians and medical facilities. Technical selection matrix, 16 vs 32 channel beamforming, and direct specifications.",
     "primaryKeyword": "Handheld Ultrasound Procurement Tender Guide",
     "secondaryKeywords": [
-      "B2B medical equipment buying guide",
+      "Medical equipment buying guide",
       "Hospital ultrasound tender specifications",
       "Portable color doppler factory pricing",
       "Point of care ultrasound selection matrix"
@@ -475,7 +475,7 @@ export const BLOG_ARTICLES = [
         <li><strong>Robust Chew & Moisture Resistance:</strong> Durable multi-layer wrap structure resists biting and moisture penetration from damp environments.</li>
       </ul>
 
-      <h2>B2B Procurement Specifications for Healthcare Facilities</h2>
+      <h2>Technical Specifications & Selection for Healthcare Facilities</h2>
       <div class="overflow-x-auto my-6">
         <table class="w-full text-xs text-left border-collapse border border-slate-200">
           <thead>
@@ -680,7 +680,7 @@ export const BLOG_ARTICLES = [
     "id": "what-is-a-medical-cohesive-bandage-self-adherent-properties-guide",
     "title": "What is a Medical Cohesive Bandage? Material Mechanics, Self-Adherent Properties & Global Sourcing Standards",
     "seoTitle": "What is a Medical Cohesive Bandage? Self-Adherent Guide & Sourcing",
-    "seoMetaDesc": "In-depth technical guide explaining medical cohesive bandages: self-adhesion without clips or glue, non-woven vs cotton elastic weave, and B2B procurement specs.",
+    "seoMetaDesc": "In-depth technical guide explaining medical cohesive bandages: self-adhesion without clips or glue, non-woven vs cotton elastic weave, and clinical quality specs.",
     "primaryKeyword": "What is a Medical Cohesive Bandage Guide",
     "secondaryKeywords": [
       "Self adherent bandage wrap material specs",
@@ -952,7 +952,7 @@ export const BLOG_ARTICLES = [
       <h3>4. Proprioceptive Neuromuscular Facilitation & Joint Guidance</h3>
       <p>Continuous tactile stimulation of cutaneous mechanoreceptors enhances the patient's proprioception (joint position sense). This helps athletic trainers correct faulty movement patterns, stabilize patellar tracking, and support weakened rotator cuff or hamstring muscle groups during functional rehabilitation.</p>
 
-      <h2>B2B Quality Benchmarks for Medical Distributors</h2>
+      <h2>Quality Benchmarks for Medical Applications</h2>
       <ul>
         <li><strong>Fabric Breathability:</strong> Medical-grade porous cotton-spandex blend allowing continuous moisture evaporation.</li>
         <li><strong>Hypoallergenic Wave Adhesive:</strong> Pure medical acrylic with zero zinc oxide or colophony resins to prevent skin sensitization.</li>

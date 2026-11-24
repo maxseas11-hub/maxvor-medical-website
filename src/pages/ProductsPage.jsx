@@ -77,7 +77,7 @@ export default function ProductsPage({ onOpenRfq, onQuickView }) {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-6 border-b border-border-soft">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-secondary">
-              {lang === 'fr' ? 'Catalogue de Vente en Gros B2B' : 'Wholesale Product Catalog'}
+              {lang === 'fr' ? 'Catalogue Officiel des Produits' : 'Official Product Catalog'}
             </span>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary mt-1">
               {activeCategoryObj ? activeCategoryObj.name : (lang === 'fr' ? 'Catalogue Médical & Consommables Cliniques' : 'Medical Equipment & Clinical Consumables')}
@@ -188,7 +188,7 @@ export default function ProductsPage({ onOpenRfq, onQuickView }) {
               {t('showingResults')} <strong className="text-slate-900 font-extrabold">{filteredProducts.length}</strong> {t('ofProducts')}
             </span>
             <span className="text-[11px] text-slate-500 font-medium">
-              {lang === 'fr' ? 'Fourniture directe B2B & Spécifications certifiées' : 'Direct B2B Factory Supply & Verified Specifications'}
+              {lang === 'fr' ? 'Produits Certifiés & Spécifications Vérifiées' : 'Certified Quality & Verified Specifications'}
             </span>
           </div>
         </div>

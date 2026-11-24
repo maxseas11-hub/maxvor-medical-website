@@ -44,7 +44,7 @@ export default function AdminLogin({ onLoginSuccess }) {
                 MAXVOR <span className="text-secondary font-light">Admin</span>
               </h1>
               <p className="text-xs sm:text-sm text-slate-300 mt-1">
-                B2B Global Operations & Inquiry Management Portal
+                Global Operations & Inquiry Management Portal
               </p>
             </div>
           </div>

@@ -120,7 +120,7 @@ export default function Categories({ onOpenRfq }) {
         <div className="mt-12 bg-white rounded-2xl p-6 sm:p-8 border border-border-soft shadow-card flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1.5 text-center md:text-left">
             <span className="text-xs font-bold text-secondary uppercase tracking-wider">
-              {lang === 'fr' ? 'Sourcing B2B & Appels d’Offres' : 'B2B Sourcing & Tender Fulfillment'}
+              {lang === 'fr' ? 'Catalogue & Commandes Directes' : 'Official Catalog & Direct Orders'}
             </span>
             <h4 className="text-lg sm:text-xl font-bold text-primary">
               {lang === 'fr' ? 'Besoin d’une Cotation Groupée pour Votre Réseau de Soins ?' : 'Need Consolidated Hospital Procurement or Custom Specifications?'}

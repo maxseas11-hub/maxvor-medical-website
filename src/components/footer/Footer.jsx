@@ -174,7 +174,7 @@ export default function Footer({ onOpenRfq }) {
               {lang === 'fr' ? 'À Propos' : 'About Us'}
             </Link>
             <Link to="/contact" className="hover:text-primary transition-colors">
-              {lang === 'fr' ? 'Assistance B2B' : 'B2B Support'}
+              {lang === 'fr' ? 'Support Client' : 'Customer Support'}
             </Link>
             <Link to="/admin" className="text-slate-400 hover:text-secondary font-mono text-[11px] transition-colors">
               Admin Portal

@@ -6,8 +6,8 @@
 [![i18n](https://img.shields.io/badge/Language-EN%20%7C%20FR-blue.svg?style=flat-square)](#)
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg?style=flat-square)](#)
 
-> **Official B2B Export Hub & Medical Equipment Catalog for MAXVOR Medical.**
-> Providing authentic handheld point-of-care ultrasound diagnostic systems, minimally invasive endoscopy towers, and hospital consumables with ISO 13485 quality standards for global distributors, hospital tenders, and clinic networks.
+> **Official Brand Website & Medical Equipment Catalog for MAXVOR Medical.**
+> Providing authentic handheld point-of-care ultrasound diagnostic systems, endoscopy towers, and premium medical consumables with ISO 13485 quality standards for healthcare facilities, clinicians, and global healthcare networks.
 
 ---
 

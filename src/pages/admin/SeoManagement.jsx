@@ -103,8 +103,8 @@ export default function SeoManagement() {
     },
     faq: { 
       name: 'FAQ & Resources (/faq)', 
-      titleEn: seo.pages?.faq?.titleEn || 'Frequently Asked Questions (FAQ) | B2B Medical Sourcing | MAXVOR', 
-      titleFr: seo.pages?.faq?.titleFr || 'Foire Aux Questions (FAQ) | Approvisionnement Médical B2B | MAXVOR', 
+      titleEn: seo.pages?.faq?.titleEn || 'Frequently Asked Questions (FAQ) | Product Sourcing | MAXVOR', 
+      titleFr: seo.pages?.faq?.titleFr || 'Foire Aux Questions (FAQ) | Approvisionnement Médical | MAXVOR', 
       descEn: seo.pages?.faq?.descEn || 'Find clear answers regarding MAXVOR multi-category medical supplies, MOQs, sample orders, ISO 13485 compliance, and international shipping.', 
       descFr: seo.pages?.faq?.descFr || 'Consultez les réponses sur le sourcing médical MAXVOR, les quantités minimales (MOQ), les échantillons, la conformité ISO 13485 et la logistique.',
       keywordsEn: seo.pages?.faq?.keywordsEn || 'medical FAQ, medical supplies procurement FAQ, ultrasound MOQ, cohesive bandage wholesale questions, hospital tender documentation',
