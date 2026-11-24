@@ -11,9 +11,11 @@ import {
   Globe2,
   Lock,
   ExternalLink,
-  Save
+  Save,
+  Database
 } from 'lucide-react';
 import { getStoredLeads, saveLeads } from '../../data/adminInitialData';
+import { getSiteData, saveSiteData } from '../../data/siteStore';
 
 export default function SystemSettings() {
   const [inquiryEmail, setInquiryEmail] = useState('sales@maxvor.com');
@@ -29,18 +31,23 @@ export default function SystemSettings() {
 
   const handleBackupJson = () => {
     const leads = getStoredLeads();
+    const siteData = getSiteData();
     const backupData = {
       brand: brandName,
       inquiryRecipient: inquiryEmail,
       backupDate: new Date().toISOString(),
+      version: 'v10',
+      totalProducts: siteData.productsEn ? siteData.productsEn.length : 0,
+      totalCategories: siteData.categoriesEn ? siteData.categoriesEn.length : 0,
       leadsCount: leads.length,
+      siteData: siteData,
       leads: leads
     };
 
     const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(backupData, null, 2));
     const dlAnchor = document.createElement('a');
     dlAnchor.setAttribute('href', dataStr);
-    dlAnchor.setAttribute('download', `MAXVOR_Database_Backup_${new Date().toISOString().slice(0, 10)}.json`);
+    dlAnchor.setAttribute('download', `MAXVOR_Full_Database_Backup_${new Date().toISOString().slice(0, 10)}.json`);
     document.body.appendChild(dlAnchor);
     dlAnchor.click();
     dlAnchor.remove();
@@ -53,7 +60,15 @@ export default function SystemSettings() {
       fileReader.onload = (event) => {
         try {
           const parsed = JSON.parse(event.target.result);
-          if (parsed && Array.isArray(parsed.leads)) {
+          if (parsed && (parsed.siteData || parsed.productsEn)) {
+            const dataToSave = parsed.siteData || parsed;
+            saveSiteData(dataToSave);
+            if (Array.isArray(parsed.leads)) {
+              saveLeads(parsed.leads);
+            }
+            alert(`Successfully restored full database (${dataToSave.productsEn?.length || 0} products, ${parsed.leads?.length || 0} leads) and synced to server!`);
+            window.location.reload();
+          } else if (parsed && Array.isArray(parsed.leads)) {
             saveLeads(parsed.leads);
             alert(`Successfully restored ${parsed.leads.length} inquiry records!`);
             window.location.reload();
@@ -196,20 +211,20 @@ export default function SystemSettings() {
           </div>
         </div>
 
-        {/* Database Backup & Disaster Recovery */}
+        {/* Full Site & Database Backup & Disaster Recovery */}
         <div className="bg-white p-6 rounded-3xl border border-border-soft shadow-xs space-y-4">
           <div className="flex items-center justify-between pb-3 border-b border-border-soft">
             <h3 className="text-sm font-bold text-slate-900 flex items-center gap-2">
-              <Server className="w-4 h-4 text-secondary" />
-              <span>Inquiry Database Backup & Restore</span>
+              <Database className="w-4 h-4 text-secondary" />
+              <span>Full Site Database & RFQ Inquiries Backup & Restore</span>
             </h3>
             <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
-              Offline Persistence
+              Full Site Persistence & Disaster Recovery
             </span>
           </div>
 
           <p className="text-slate-600 leading-relaxed">
-            Export all client inquiry records, buyer contact information, and procurement notes to a standalone JSON file for offline backup or migration.
+            Export all 73 product specifications, custom multi-image galleries, categories, clinical articles, SEO metadata, navigation, and client RFQ inquiry records to a standalone backup JSON file for permanent offline safety and migration.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -218,12 +233,12 @@ export default function SystemSettings() {
               className="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold flex items-center gap-2 cursor-pointer shadow-xs"
             >
               <Download className="w-4 h-4 text-secondary" />
-              <span>Download Database JSON Backup</span>
+              <span>Download Full Site JSON Backup</span>
             </button>
 
             <label className="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center gap-2 cursor-pointer transition-colors">
               <Upload className="w-4 h-4 text-slate-600" />
-              <span>Restore from JSON File</span>
+              <span>Restore from Backup JSON File</span>
               <input 
                 type="file" 
                 accept=".json"
