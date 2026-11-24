@@ -39,36 +39,44 @@
 
 ---
 
-## 📦 三、现有 3 大产品品类矩阵 (68 款核心 SKU)
+## 📦 三、现有 3 大产品品类矩阵 (73 款核心 SKU)
 
 1. **Point-of-Care Ultrasound Diagnostic Systems (27款)**:
    - 凸阵、线阵、微凸、微线阵、相控阵、双头探头及四维探头，覆盖腹部、血管、浅表器官、心脏及妇产科床旁诊断。
 2. **Medical Bandages, Tapes & Cold Therapy Consumables (13款)**:
    - 自粘弹性绷带、肌内效贴布、输液贴、刚性透气贴布、皮肤膜、轻/重弹绷带、即冷冷敷绷带、自粘冷敷绷带、急救冷冻喷雾、一次性速冷冰袋、液体敷料及冷热敷冰袋。
-3. **Minimally Invasive Endoscopy Systems & Surgical Instruments (28款)**:
+3. **Rigid & Flexible Endoscopy Systems & Accessories (33款)**:
    - **肾镜系列**: 超微可视穿刺肾镜、微型肾镜 (8.5/12Fr)、标准经皮肾镜 (15/18Fr)、新型 Mini-PCNL 广角肾镜、520,000 像素高清刚性数字肾镜、UPS 12° 双通道数字肾镜等。
    - **输尿管镜系列**: USP 12° 刚性数字输尿管镜 (160k/520k px)、双通道输尿管镜、柱状光学纤维输尿管镜、一次性数字电子软镜 (275°双向弯曲)、可复用数字电子软镜系统。
    - **膀胱镜系列**: 免鞘刚性数字膀胱镜 (9/11/13Fr)、一次性电子膀胱软镜、可复用电子膀胱软镜系统。
-   - **妇产科微创系统**: 超薄前列腺激光镜、超微旋切镜 (22Fr外鞘)、TTTS 双胎输血综合征激光凝固胎儿镜 (2mm外径)、智能旋切动力系统。
-   - **内窥镜主机设备与工作站**: 1080P 高清图像处理器、4K UHD 超高清摄像系统、100W 医用高功率 LED 冷光源、智能灌注吸引工作站、直视导引鞘负压碎石一体化推车塔桥。
-   - **内窥镜耗材**: 一次性可弯曲负压清石鞘、医用亲水超滑斑马导丝 (0.028"~0.038")、各类异物钳/活检钳/剪刀套件及 IUD 缝合器械。
+   - **妇产科与前列腺微创系统**: 超薄前列腺激光镜、超微旋切镜 (22Fr外鞘)、TTTS 双胎输血综合征激光凝固胎儿镜 (2mm外径)、智能旋切动力系统。
+   - **内窥镜主机设备与工作站**: 1080P 高清图像处理器、便携式带屏图像处理器、4K UHD 超高清摄像系统、100W 医用高功率 LED 冷光源、智能双泵/单泵灌注吸引工作站、直视导引鞘负压碎石一体化推车塔桥、宫腔镜手术系统完整工作站。
+   - **内窥镜耗材与器械**: 一次性万向可弯曲负压清石鞘、医用亲水超滑斑马导丝 (0.028"~0.038")、各类异物钳/活检钳/剪刀套件及 IUD 节育环缝合器械套装。
 
 ---
 
-## 🌐 四、SEO & GEO 搜索引擎优化规范
+## 🔄 六、后台手动更新与前后台双向同步版本管理机制 (Admin Sync & Version Protocol)
 
-1. **Sitemap 规范**:
-   - `public/sitemap.xml` 严格遵循 `sitemaps.org` XML 2.0 协议标准，根标签为单一大闭合 `<urlset>`，禁止中间嵌套或提前截断闭合。
-   - 现已全量收录 124 条标准 URL（涵盖首页、产品大类、68 款产品英法双语详情页、FAQ、资质认证、关于我们、联系我们及 21 篇临床 SOP 博客）。
-2. **URL 路由设计**:
-   - 采用标准语义化英文 Slug，严禁在 URL 中出现未经授权的品牌词、测试型号或内部编码。
-   - 示例：`/products/digital-visual-puncture-mini-nephroscope`、`/products/waterproof-elastic-kinesiology-tape`。
-3. **Schema.org 结构化数据**:
-   - 页面自动注入 `MedicalDevice`、`MedicalWebPage`、`FAQPage`、`Organization` JSON-LD 结构化数据，提升 AI 搜索引擎（ChatGPT, Perplexity, Gemini）和传统搜索引擎（Google, Bing, Yandex）的收录抓取与引用率。
+为确保用户在 CMS 管理后台（`/admin`）的修改操作能即时体现在前台，且后续代码升级不会冲刷掉用户的修改，所有后续 AI 与维护者必须严格遵循以下机制：
+
+1. **前后台双向智能同步机制 (Bidirectional Merge & Persistence)**:
+   - **后台修改 -> 前台即时生效**: 用户在后台修改产品标题、图片、画廊、技术规格、MOQ 或在线状态后，`saveSiteData()` 会立即更新本地存储并通过 `maxvor_site_data_updated` 事件驱动前台页面秒级刷新，同时异步 POST 至服务器 `/api/site-data.ashx` 持久化到 `App_Data/site_data.json`。
+   - **代码升级 -> 用户修改 100% 保护**: 当后续通过代码新增产品或修改页面时，`fetchServerSiteData()` 与 `getSiteData()` 会调用 `mergeProductsWithCode()` 与 `mergeCategoriesWithCode()` 深度合并算法：
+     - **优先保护用户在后台手动上传的图片与画廊** (`matchedStored.gallery` 位于前列)；
+     - **优先保留用户在后台手动调整的在线/下架状态** (`isActive`)；
+     - **自动引入代码层新增的 SKU 与新分类**，合并为全量最新数据集；
+     - **自动将合并后的全量数据回写服务器**，使服务器端数据库始终保持最新全集，杜绝产品数量回退（如 73 降回 40）。
+
+2. **全站图片资源镜像与多层级容错兜底 (Image Mirror & Fallback)**:
+   - 所有产品图片必须在 `/assets/images/` 及其子目录保持规范镜像；
+   - 所有前端组件（`ProductCard`、`ProductDetailPage`、`ProductQuickViewModal`、`ProductManagement`）必须配置 `onError` 智能容错处理，当外部路径不可用时自动无缝降级为对应品类的白底高清矩阵图，杜绝任何破图/裂图现象。
+
+3. **用户手动更新版本记录规范 (Version Audit Log)**:
+   - 每次用户在后台完成数据批量调整或新功能上线后，系统在 `siteStore.js` 自动更新 `lastUpdated` 时间戳，并在 `CHANGELOG.md` 及交接档案中留存版本记录，确保项目可追溯、可审计。
 
 ---
 
-## 🚀 五、接手本项目的 AI 操作指令指南 (How to Work)
+## 🚀 七、接手本项目的 AI 操作指令指南 (How to Work)
 
 当新的 AI 接手本项目时，请按照以下标准工作流执行任务：
 

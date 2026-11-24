@@ -4,6 +4,16 @@ All notable changes, product uploads, architectural refactorings, and SEO milest
 
 ---
 
+## [v2.5.0] - 2026-11-24
+### 🔄 Full 73 Products Sync, Bidirectional Persistence & Admin Version Logging
+- **73 Woke Endoscopy & Consumables Catalog**: Uploaded all 33 Woke Medical endoscopy products (33 Endoscopy + 27 Ultrasound + 13 Bandage = 73 Total Products), strictly adhering to Excel titles with zero model numbers displayed on the frontend.
+- **Bidirectional Merge Engine (`siteStore.js`)**: Refactored `fetchServerSiteData()` with `mergeProductsWithCode` and `mergeCategoriesWithCode`, ensuring server-side `App_Data/site_data.json` automatically merges with codebase updates and auto-persists without dropping products (fixing the 73 -> 40 rollback bug).
+- **Admin Customization Protection**: Ensured user modifications in `/admin` (uploaded gallery images, status toggles, custom specs, and SEO overrides) are 100% preserved and never overwritten by future code updates.
+- **Image Mirroring & Multi-Tier Fallback**: Mirrored all product assets across `/assets/images/` and `/assets/images/gspmed/`, and injected `onError` smart category image fallbacks across all frontend and admin components to eliminate broken image icons.
+- **Admin Audit Logging**: Added automatic timestamp tracking (`lastUpdated`) and manual update version tracking standards.
+
+---
+
 ## [v2.4.0] - 2026-11-20
 ### 🌟 Endoscopy Expansion, Layout Matrix & GitHub Continuity
 - **Endoscopy Systems Upload**: Uploaded 28 Woke Medical endoscopy products (Nephroscopes, Ureteroscopes, Cystoscopes, Hysteroscopes, Fetoscopes, 4K UHD Cameras, 100W LED Light Sources, Irrigators, Guide Wires) with strictly omitted model numbers in accordance with compliance guidelines.
