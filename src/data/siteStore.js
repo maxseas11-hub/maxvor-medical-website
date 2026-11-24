@@ -10,7 +10,38 @@ import { BLOG_ARTICLES_FR, SEO_KEYWORD_TAGS_FR } from './articlesFr';
 import { en } from '../i18n/locales/en';
 import { fr } from '../i18n/locales/fr';
 
-const STORAGE_KEY = 'maxvor_cms_site_data_v10';
+const STORAGE_KEY = 'maxvor_cms_site_data_v11';
+
+// Deep string sanitizer to purge all legacy B2B and wholesale wording from stored data
+export function sanitizeB2B(val) {
+  if (typeof val === 'string') {
+    return val
+      .replace(/\bB2B\b/g, 'Direct')
+      .replace(/\bWholesale Product Catalog\b/gi, 'Official Product Catalog')
+      .replace(/\bCatalogue de Vente en Gros B2B\b/gi, 'Catalogue Officiel des Produits')
+      .replace(/B2B Sourcing/gi, 'Direct Sourcing')
+      .replace(/B2B Export/gi, 'Global Export')
+      .replace(/B2B Procurement/gi, 'Medical Procurement')
+      .replace(/B2B Logistics/gi, 'Global Logistics')
+      .replace(/B2B Wholesale/gi, 'Direct Supply')
+      .replace(/B2B Pricing/gi, 'Pricing & Specs')
+      .replace(/B2B Support/gi, 'Customer Support')
+      .replace(/Assistance B2B/gi, 'Support Client')
+      .replace(/Tarif Grossiste B2B/gi, 'Devis & Tarifs')
+      .replace(/2026-b2b-handheld-ultrasound-procurement-and-tender-guide/gi, '2026-handheld-ultrasound-procurement-guide');
+  }
+  if (Array.isArray(val)) {
+    return val.map(item => sanitizeB2B(item));
+  }
+  if (val && typeof val === 'object') {
+    const res = {};
+    for (const k of Object.keys(val)) {
+      res[k] = sanitizeB2B(val[k]);
+    }
+    return res;
+  }
+  return val;
+}
 
 export const DEFAULT_NAVIGATION = [
   { id: 'nav-home', labelEn: 'Home', labelFr: 'Accueil', path: '/', isVisible: true, hasMegaMenu: false },
@@ -246,6 +277,7 @@ function normalizeArticles(list) {
 function findStoredData() {
   const keysToTry = [
     STORAGE_KEY,
+    'maxvor_cms_site_data_v10',
     'maxvor_cms_site_data_v9',
     'maxvor_cms_site_data_v8',
     'maxvor_cms_site_data_v7',
@@ -264,7 +296,7 @@ function findStoredData() {
       const raw = localStorage.getItem(k);
       if (raw) {
         const parsed = JSON.parse(raw);
-        if (parsed && typeof parsed === 'object') return parsed;
+        if (parsed && typeof parsed === 'object') return sanitizeB2B(parsed);
       }
     } catch {}
   }
@@ -435,7 +467,7 @@ export function getSiteData() {
       return initial;
     }
 
-    const merged = {
+    const merged = sanitizeB2B({
       productsEn: mergeProductsWithCode(parsed.productsEn, FEATURED_PRODUCTS),
       productsFr: mergeProductsWithCode(parsed.productsFr, FEATURED_PRODUCTS_FR),
       categoriesEn: mergeCategoriesWithCode(parsed.categoriesEn, CATEGORIES),
@@ -446,7 +478,7 @@ export function getSiteData() {
       seo: parsed.seo || DEFAULT_SEO_SETTINGS,
       pageContent: parsed.pageContent || DEFAULT_PAGE_CONTENT,
       lastUpdated: parsed.lastUpdated || new Date().toISOString()
-    };
+    });
     
     // Auto-save merged state to latest key
     localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
@@ -506,7 +538,7 @@ export async function fetchServerSiteData() {
     if (res.ok) {
       const serverData = await res.json();
       if (serverData && typeof serverData === 'object') {
-        const mergedServerData = {
+        const mergedServerData = sanitizeB2B({
           ...serverData,
           productsEn: mergeProductsWithCode(serverData.productsEn, FEATURED_PRODUCTS),
           productsFr: mergeProductsWithCode(serverData.productsFr, FEATURED_PRODUCTS_FR),
@@ -518,7 +550,7 @@ export async function fetchServerSiteData() {
           seo: serverData.seo || DEFAULT_SEO_SETTINGS,
           pageContent: serverData.pageContent || DEFAULT_PAGE_CONTENT,
           lastUpdated: new Date().toISOString()
-        };
+        });
         localStorage.setItem(STORAGE_KEY, JSON.stringify(mergedServerData));
         window.dispatchEvent(new CustomEvent('maxvor_site_data_updated', { detail: mergedServerData }));
         
