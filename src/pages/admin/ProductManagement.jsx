@@ -854,7 +854,27 @@ export default function ProductManagement() {
                           }`}
                         >
                           <div className="w-full aspect-square flex items-center justify-center overflow-hidden rounded-xl bg-white">
-                            <img src={imgUrl} alt={`Gallery ${imgIdx}`} className="w-full h-full object-contain" />
+                            <img 
+                              src={imgUrl || '/assets/images/placeholder.svg'} 
+                              alt={`Gallery ${imgIdx}`} 
+                              className="w-full h-full object-contain" 
+                              onError={(e) => {
+                                e.target.onerror = null;
+                                if (imgUrl && imgUrl.includes('/assets/images/gspmed/')) {
+                                  const fallbackName = imgUrl.split('/').pop();
+                                  e.target.src = `/assets/images/${fallbackName}`;
+                                } else if (imgUrl && imgUrl.startsWith('/assets/images/image')) {
+                                  const fallbackName = imgUrl.split('/').pop();
+                                  e.target.src = `/assets/images/gspmed/${fallbackName}`;
+                                } else if (currentProduct.categoryId === 'endoscopy-systems' || currentProduct.category === 'endoscopy-systems') {
+                                  e.target.src = '/assets/images/cat-endoscopy-matrix.png';
+                                } else if (currentProduct.categoryId === 'ultrasound-systems' || currentProduct.category === 'point-of-care-ultrasound') {
+                                  e.target.src = '/assets/images/cat-ultrasound-matrix.png';
+                                } else {
+                                  e.target.src = '/assets/images/cat-bandages-matrix.png';
+                                }
+                              }}
+                            />
                           </div>
 
                           {isMain && (
