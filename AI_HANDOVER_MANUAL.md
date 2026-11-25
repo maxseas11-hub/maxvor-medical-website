@@ -11,14 +11,31 @@
 - **品牌定位**: 集约型医疗耗材与诊断设备超级供应链枢纽（专注全球医院招标、私立诊所、急诊网络及海外医疗器械分销商）。
 - **目标市场**: 全球市场，重点覆盖非洲（卢旺达、喀麦隆、肯尼亚、坦桑尼亚等）、中东、东南亚、拉美及欧洲多语言采购网络。
 - **建站原则**:
-  1. **彻底去 OEM/批发化**: 前台界面严禁出现 `OEM/ODM`、`B2B Wholesale`、`Factory Direct Wholesale` 等低端代工词汇，全站树立自主品牌、集约型医疗供应商的专业形象。
+  1. **彻底去 OEM/批发化**: 前台界面严禁出现 `OEM/ODM`、`B2B Wholesale`、`Direct B2B Factory Supply`、`Dedicated B2B Desk` 等批发代工词汇，全站树立自主品牌、集约型医疗产品供应商（Medical Products Supplier）的专业形象。
   2. **知识产权与授权合规**: 仅上架取得正式商业授权的产品系列（如索诺星 Sonostar 掌超探头、沃克 Woke 医用微创内窥镜器械及高品质敷料），坚决下架或不上架未授权测试品（如 `CP-6CPL`、`CP-6F`、`CP-8C` 严禁上架）。
   3. **起订量策略 (MOQ)**: 高值医疗设备（超声探头、内窥镜系统、摄像主机、冷光源）统一为 **1 Unit**；医用耗材（绷带、贴布、冷疗包）统一为 **1 Carton**；一次性软镜/导丝统一为 **1 Box**。
   4. **产品型号展示规则**: 对于型号尚未正式最终确定的产品线（如沃克内窥镜），标题、前台卡片、详细规格及 URL Slug 中**严格隐藏未定型号**，统一采用标准临床功能术语命名。
 
 ---
 
-## 🛠️ 二、技术架构与规范 (Technical Stack & Architecture)
+## 📝 二、全站核心文案规范 (Copywriting & Tone Standards)
+
+1. **Home Banner 副标题**:
+   `Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient supply support.`
+2. **Products 页面**:
+   - 移除结果行 `Direct B2B Factory Supply & Verified Specifications` 标签。
+   - 页面副标题规范为：`Explore a comprehensive portfolio of diagnostic instruments, imaging probes, and clinical supplies for diverse healthcare needs worldwide.`
+3. **产品详情页主按钮**:
+   统一使用 **`Inquire for Pricing`**。
+4. **FAQ 页面 All Questions 描述与徽标**:
+   - 描述规范为：`Browse our FAQs for helpful information about our products, services, and support.`
+   - 移除 `Dedicated B2B Desk` 徽标。
+5. **全站底部栏 (Footer)**:
+   `MAXVOR is a medical products supplier based in China, offering a diverse portfolio of diagnostic instruments, medical equipment, and clinical supplies to healthcare professionals and medical institutions worldwide.`
+
+---
+
+## 🛠️ 三、技术架构与规范 (Technical Stack & Architecture)
 
 - **前端技术栈**:
   - `React 18` + `Vite` 构建单页应用 (SPA)
@@ -35,7 +52,8 @@
 - **生产部署与服务器环境**:
   - 生产环境：阿里云 Windows Server (IIS 托管)
   - 配置 `public/web.config` 实现 SPA 路由重写规则（URL Rewrite），防止刷新页面 404。
-  - 生产包一键交付：编译产物打包为 `maxvor-medical-website-dist.zip`，解压覆盖 IIS 站点根目录即可。
+  - **防强缓存协议**: `index.html` 与 `web.config` 内置 `Cache-Control: no-cache, no-store, must-revalidate`，确保前端代码迭代后访客浏览器即刻拉取最新 JS Hash，杜绝历史缓存残留。
+  - **标准化生产部署流程**: 彻底弃用 `.bat` 批处理，统一采用【生产压缩包 + PowerShell 直拷命令】进行服务器更新，严格物理隔离并 100% 保护 `App_Data/site_data.json` 与 `assets/uploads/` 目录。
 
 ---
 
@@ -90,6 +108,20 @@
    - 编辑 `src/data/articles.js` (EN) 与 `src/data/articlesFr.js` (FR)。
 4. **编译与打包**:
    - 执行 `npm run build` 生成生产编译产物（输出至 `dist/`）；
-   - 执行打包脚本或压缩 `dist/` 目录生成 `maxvor-medical-website-dist.zip` 交付给用户。
-5. **站点地图同步**:
+   - 执行打包脚本生成 `maxvor-medical-website-dist.zip` 交付给用户。
+5. **服务器部署命令规范 (PowerShell 直拷)**:
+   - 指引用户在服务器 PowerShell 中执行标准直拷与 IIS 刷新指令：
+   ```powershell
+   $zip = "C:\Users\Administrator\Desktop\maxvor-medical-website-dist.zip"
+   $target = "D:\wwwroot\maxvor"
+   $temp = "C:\Users\Administrator\Desktop\maxvor_temp_extract"
+   if (Test-Path $temp) { Remove-Item -Path $temp -Recurse -Force }
+   Expand-Archive -Path $zip -DestinationPath $temp -Force
+   Copy-Item -Path "$temp\index.html" -Destination "$target\index.html" -Force
+   Copy-Item -Path "$temp\web.config" -Destination "$target\web.config" -Force
+   Copy-Item -Path "$temp\assets\*" -Destination "$target\assets\" -Recurse -Force
+   (Get-Item "$target\web.config").LastWriteTime = Get-Date
+   Remove-Item -Path $temp -Recurse -Force
+   ```
+6. **站点地图同步**:
    - 如增删页面或产品，同步更新 `public/sitemap.xml` 并运行 XML 语法校验。

@@ -23,18 +23,21 @@
 
 ## 🏗️ System Architecture & Features
 
-1. **3 Core Medical Categories Matrix (68 Active SKUs)**:
+1. **3 Core Medical Categories Matrix (73 Active SKUs)**:
    - **Point-of-Care Ultrasound Diagnostic Systems** (27 probes: Convex, Linear, Micro-Convex, Phased Array, Dual-Head, 4D Volume)
    - **Medical Bandages, Tapes & Cold Therapy Consumables** (13 products: Cohesive Bandages, Kinesiology Tapes, Cryotherapy Wraps, Ice Sprays)
-   - **Minimally Invasive Endoscopy Systems & Surgical Instruments** (28 products: Nephroscopes, Ureteroscopes, Cystoscopes, Hysteroscopes, Fetoscopes, 4K UHD Cameras, 100W LED Light Sources, Irrigators, Guide Wires)
+   - **Minimally Invasive Endoscopy Systems & Surgical Instruments** (33 products: Nephroscopes, Ureteroscopes, Cystoscopes, Hysteroscopes, Fetoscopes, 4K UHD Cameras, 100W LED Light Sources, Irrigators, Guide Wires)
 2. **Dynamic Bilingual Localization (EN / FR)**:
    - Complete multi-language routing with synchronized product catalogs, category definitions, FAQ entries, and clinical SOP blogs.
 3. **Enterprise CMS Operations Hub (`/admin`)**:
    - Visual dashboard for RFQ inquiries management, CSV exports, dynamic navigation configuration, and real-time product catalog editing.
    - Intelligent bidirectional data synchronization merging code updates with custom administrative changes.
 4. **Search Engine & Generative Engine Optimization (SEO / GEO)**:
-   - 100% compliant XML Sitemap (`public/sitemap.xml`) indexing 124 standard URLs.
+   - 100% compliant XML Sitemap (`public/sitemap.xml`) indexing 129 standard URLs.
    - Comprehensive JSON-LD structured data (`MedicalDevice`, `Organization`, `FAQPage`).
+5. **Anti-Cache & Reliable Production Deployment**:
+   - Standardized PowerShell deployment with 100% database & uploads protection.
+   - Built-in `Cache-Control: no-cache, no-store, must-revalidate` across HTML & IIS configurations.
 
 ---
 
