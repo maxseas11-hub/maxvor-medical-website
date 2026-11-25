@@ -145,11 +145,17 @@ foreach ($file in $sourceFiles) {
         New-Item -ItemType Directory -Path $destFolder -Force | Out-Null
     }
 
-    Copy-Item -Path $file.FullName -Destination $destPath -Force
+    [System.IO.File]::Copy($file.FullName, $destPath, $true)
     $deployedCount++
 }
 
-# 6. Cleanup sandbox
+# 6. Touch web.config to force IIS worker process to clear cache and reload index.html
+$webConfig = Join-Path $TargetDir "web.config"
+if (Test-Path $webConfig) {
+    (Get-Item $webConfig).LastWriteTime = Get-Date
+}
+
+# 7. Cleanup sandbox
 Write-Host "[3/4] Cleaning temporary sandbox..." -ForegroundColor Yellow
 Remove-Item -Path $tempExtractDir -Recurse -Force -ErrorAction SilentlyContinue
 
