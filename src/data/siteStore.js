@@ -16,6 +16,14 @@ const STORAGE_KEY = 'maxvor_cms_site_data_v11';
 export function sanitizeB2B(val) {
   if (typeof val === 'string') {
     return val
+      .replace(/Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient B2B supply support\./gi, 'Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient supply support.')
+      .replace(/Streamlining B2B procurement for overseas healthcare distributors, hospital tenders, and clinic networks with direct source pricing, export documentation, and reliable fulfillment\./gi, 'Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient supply support.')
+      .replace(/Authorized diagnostic instruments, point-of-care imaging probes, and clinical supplies available for B2B wholesale and global healthcare procurement\./gi, 'Explore a comprehensive portfolio of diagnostic instruments, imaging probes, and clinical supplies for diverse healthcare needs worldwide.')
+      .replace(/Inquire for\s+B2B Pricing/gi, 'Inquire for Pricing')
+      .replace(/Explore our complete list of B2B procurement questions or filter by specific category above to narrow your inquiry\./gi, 'Browse our FAQs for helpful information about our products, services, and support.')
+      .replace(/Dedicated B2B Desk/gi, 'Dedicated Support Desk')
+      .replace(/Direct B2B Factory Supply & Verified Specifications/gi, '')
+      .replace(/MAXVOR is a dedicated B2B medical equipment and clinical supply chain hub based in China, delivering certified diagnostic instruments and hospital supplies to overseas distributors and tenders\./gi, 'MAXVOR is a medical products supplier based in China, offering a diverse portfolio of diagnostic instruments, medical equipment, and clinical supplies to healthcare professionals and medical institutions worldwide.')
       .replace(/\bB2B\b/g, 'Direct')
       .replace(/\bWholesale Product Catalog\b/gi, 'Official Product Catalog')
       .replace(/\bCatalogue de Vente en Gros B2B\b/gi, 'Catalogue Officiel des Produits')
@@ -24,7 +32,7 @@ export function sanitizeB2B(val) {
       .replace(/B2B Procurement/gi, 'Medical Procurement')
       .replace(/B2B Logistics/gi, 'Global Logistics')
       .replace(/B2B Wholesale/gi, 'Direct Supply')
-      .replace(/B2B Pricing/gi, 'Pricing & Specs')
+      .replace(/B2B Pricing/gi, 'Pricing')
       .replace(/B2B Support/gi, 'Customer Support')
       .replace(/Assistance B2B/gi, 'Support Client')
       .replace(/Tarif Grossiste B2B/gi, 'Devis & Tarifs')
@@ -173,8 +181,8 @@ export const DEFAULT_PAGE_CONTENT = {
     badgeFr: 'Hub d’Équipements Médicaux & Systèmes de Diagnostic Autorisés',
     titleEn: 'Professional Point-of-Care Ultrasound & Clinical Supplies',
     titleFr: 'Systèmes d’Échographie Portables & Fournitures Cliniques',
-    subtitleEn: 'Delivering certified diagnostic instruments, clinical ultrasound probes, and premium hospital consumables worldwide with direct transparent pricing and reliable fulfillment.',
-    subtitleFr: 'Dispositifs médicaux de précision, sondes d’échographie et consommables de soins des plaies avec accompagnement direct et documentation certifiée.',
+    subtitleEn: 'Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient supply support.',
+    subtitleFr: 'Connecter les acheteurs internationaux avec des produits médicaux fiables, des solutions d’approvisionnement flexibles et un support logistique efficace.',
     feature1En: 'Direct Manufacturer Quality & Pricing',
     feature1Fr: 'Tarification Grossiste Directe d’Usine',
     feature2En: 'ISO Standard Manufacturing Quality',

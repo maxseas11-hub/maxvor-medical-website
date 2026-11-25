@@ -77,7 +77,15 @@ if (Test-Path $appDataDir) {
         # Automatically sanitize legacy B2B & wholesale terms from server database while 100% preserving custom edits/images
         try {
             $rawContent = [System.IO.File]::ReadAllText($currentJson, [System.Text.Encoding]::UTF8)
-            $cleaned = $rawContent -replace '\bB2B\b', 'Direct' `
+            $cleaned = $rawContent -replace 'Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient B2B supply support\.', 'Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient supply support.' `
+                                  -replace 'Streamlining B2B procurement for overseas healthcare distributors, hospital tenders, and clinic networks with direct source pricing, export documentation, and reliable fulfillment\.', 'Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient supply support.' `
+                                  -replace 'Authorized diagnostic instruments, point-of-care imaging probes, and clinical supplies available for B2B wholesale and global healthcare procurement\.', 'Explore a comprehensive portfolio of diagnostic instruments, imaging probes, and clinical supplies for diverse healthcare needs worldwide.' `
+                                  -replace 'Inquire for\s+B2B Pricing', 'Inquire for Pricing' `
+                                  -replace 'Explore our complete list of B2B procurement questions or filter by specific category above to narrow your inquiry\.', 'Browse our FAQs for helpful information about our products, services, and support.' `
+                                  -replace 'Dedicated B2B Desk', 'Dedicated Support Desk' `
+                                  -replace 'Direct B2B Factory Supply & Verified Specifications', '' `
+                                  -replace 'MAXVOR is a dedicated B2B medical equipment and clinical supply chain hub based in China, delivering certified diagnostic instruments and hospital supplies to overseas distributors and tenders\.', 'MAXVOR is a medical products supplier based in China, offering a diverse portfolio of diagnostic instruments, medical equipment, and clinical supplies to healthcare professionals and medical institutions worldwide.' `
+                                  -replace '\bB2B\b', 'Direct' `
                                   -replace 'Wholesale Product Catalog', 'Official Product Catalog' `
                                   -replace 'Catalogue de Vente en Gros B2B', 'Catalogue Officiel des Produits' `
                                   -replace 'B2B Sourcing', 'Direct Sourcing' `
@@ -85,7 +93,7 @@ if (Test-Path $appDataDir) {
                                   -replace 'B2B Procurement', 'Medical Procurement' `
                                   -replace 'B2B Logistics', 'Global Logistics' `
                                   -replace 'B2B Wholesale', 'Direct Supply' `
-                                  -replace 'B2B Pricing', 'Pricing & Specs' `
+                                  -replace 'B2B Pricing', 'Pricing' `
                                   -replace 'B2B Support', 'Customer Support' `
                                   -replace 'Assistance B2B', 'Support Client' `
                                   -replace 'Tarif Grossiste B2B', 'Devis & Tarifs' `

@@ -187,9 +187,6 @@ export default function ProductsPage({ onOpenRfq, onQuickView }) {
             <span>
               {t('showingResults')} <strong className="text-slate-900 font-extrabold">{filteredProducts.length}</strong> {t('ofProducts')}
             </span>
-            <span className="text-[11px] text-slate-500 font-medium">
-              {lang === 'fr' ? 'Produits Certifiés & Spécifications Vérifiées' : 'Certified Quality & Verified Specifications'}
-            </span>
           </div>
         </div>
 

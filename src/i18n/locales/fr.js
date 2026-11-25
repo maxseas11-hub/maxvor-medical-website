@@ -30,7 +30,7 @@ export const fr = {
   heroTitle: 'Fourniture Globale d’',
   heroTitleHighlight: 'Équipements Médicaux',
   heroTitleEnd: '& Consommables Cliniques',
-  heroSubtitle: 'Optimisation de l’approvisionnement pour les distributeurs de santé, appels d’offres hospitaliers et réseaux de cliniques à l’international, avec prix directs et dossiers complets.',
+  heroSubtitle: 'Connecter les acheteurs internationaux avec des produits médicaux fiables, des solutions d’approvisionnement flexibles et un support logistique efficace.',
   heroFeature1: 'Tarification Directe & Volumes Consolidés',
   heroFeature2: 'Gestion de la Qualité selon Norme ISO 13485',
   heroFeature3: 'Support Complet pour la Documentation Réglementaire & Export',
@@ -62,7 +62,7 @@ export const fr = {
   
   // Product Page
   productsTitle: 'Catalogue d’Équipements & Dispositifs Médicaux',
-  productsSubtitle: 'Instruments de diagnostic certifiés, sondes d’échographie portables et fournitures cliniques de haute précision.',
+  productsSubtitle: 'Explorez un portefeuille complet d’instruments de diagnostic, sondes d’échographie et consommables cliniques répondant aux exigences médicales mondiales.',
   filterAllCategories: 'Toutes les Catégories',
   searchPlaceholder: 'Rechercher par mot-clé, modèle ou application clinique...',
   noProductsFound: 'Aucun produit ne correspond à votre recherche.',
@@ -80,7 +80,7 @@ export const fr = {
   productMoqLabel: 'MOQ Standard :',
   productLeadTimeLabel: 'Délai d’Expédition :',
   productLeadTimeVal: '3 à 10 Jours Ouvrables',
-  productInquiryBtn: 'Demander un Devis & Tarifs',
+  productInquiryBtn: 'Demander un Devis',
   productDatasheetBtn: 'Télécharger le Dossier Technique',
   keyHighlightsTitle: 'Points Forts & Caractéristiques Techniques',
   techSpecsTitle: 'Spécifications Techniques Complètes',
@@ -162,7 +162,7 @@ export const fr = {
   closeModal: 'Fermer',
   
   // Footer
-  footerDesc: 'MAXVOR est une plateforme d’approvisionnement et d’exportation d’équipements médicaux et consommables basée à China, en Chine, dédiée aux distributeurs et appels d’offres hospitaliers internationaux.',
+  footerDesc: 'MAXVOR est un fournisseur d’équipements médicaux basé en Chine, offrant une gamme diversifiée d’instruments de diagnostic, d’équipements et de consommables cliniques aux professionnels de santé et institutions médicales du monde entier.',
   footerQuickLinks: 'Accès Rapide',
   footerCompliance: 'Qualité & Conformité',
   footerComplianceText: 'Fabrication et inspection conformes aux systèmes de gestion de la qualité ISO 13485 et aux directives de sécurité CE. Rapports d’essais et dossiers d’exportation disponibles sur demande.',

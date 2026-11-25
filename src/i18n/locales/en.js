@@ -30,7 +30,7 @@ export const en = {
   heroTitle: 'Direct Factory Supply of',
   heroTitleHighlight: 'Medical Equipment',
   heroTitleEnd: '& Clinical Supplies',
-  heroSubtitle: 'Delivering certified diagnostic instruments, clinical ultrasound probes, and premium hospital consumables worldwide with direct transparent pricing and reliable fulfillment.',
+  heroSubtitle: 'Connecting global buyers with reliable medical products, flexible sourcing solutions, and efficient supply support.',
   heroFeature1: 'Direct Manufacturer Quality & Value',
   heroFeature2: 'ISO Standard Manufacturing Quality',
   heroFeature3: 'Comprehensive Export Documentation Support',
@@ -62,7 +62,7 @@ export const en = {
   
   // Product Page
   productsTitle: 'Medical Equipment & Device Catalog',
-  productsSubtitle: 'Authorized diagnostic instruments, point-of-care imaging probes, and premium clinical supplies with verified specifications.',
+  productsSubtitle: 'Explore a comprehensive portfolio of diagnostic instruments, imaging probes, and clinical supplies for diverse healthcare needs worldwide.',
   filterAllCategories: 'All Categories',
   searchPlaceholder: 'Search products by keyword, model, or clinical application...',
   noProductsFound: 'No products found matching your search.',
@@ -80,7 +80,7 @@ export const en = {
   productMoqLabel: 'Standard MOQ:',
   productLeadTimeLabel: 'Lead Time:',
   productLeadTimeVal: '3-10 Business Days',
-  productInquiryBtn: 'Inquire for Pricing & Details',
+  productInquiryBtn: 'Inquire for Pricing',
   productDatasheetBtn: 'Download Technical Dossier',
   keyHighlightsTitle: 'Key Technical Highlights',
   techSpecsTitle: 'Full Technical Specifications',
@@ -162,7 +162,7 @@ export const en = {
   closeModal: 'Close',
   
   // Footer
-  footerDesc: 'MAXVOR is a premier medical equipment and clinical supply brand delivering certified diagnostic instruments, point-of-care ultrasound systems, and hospital consumables worldwide.',
+  footerDesc: 'MAXVOR is a medical products supplier based in China, offering a diverse portfolio of diagnostic instruments, medical equipment, and clinical supplies to healthcare professionals and medical institutions worldwide.',
   footerQuickLinks: 'Quick Links',
   footerCompliance: 'Quality & Compliance',
   footerComplianceText: 'Manufactured and inspected in accordance with ISO 13485 quality systems and applicable CE safety standards. All test data and export dossiers verifiable upon request.',

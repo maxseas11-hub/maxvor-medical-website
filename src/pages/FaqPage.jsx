@@ -221,7 +221,7 @@ export default function FaqPage({ onOpenRfq }) {
                 </span>
                 <h3 className="text-lg font-bold text-slate-900 mt-1">
                   {activeCategory === 'all'
-                    ? (lang === 'fr' ? 'Toutes les Rubriques' : 'Comprehensive Sourcing FAQ')
+                    ? (lang === 'fr' ? 'Toutes les Questions' : 'All Questions')
                     : (lang === 'fr' 
                         ? FAQ_CATEGORIES.find(c => c.id === activeCategory)?.nameFr 
                         : FAQ_CATEGORIES.find(c => c.id === activeCategory)?.nameEn)}
@@ -229,8 +229,8 @@ export default function FaqPage({ onOpenRfq }) {
                 <p className="text-xs text-slate-600 mt-2 leading-relaxed">
                   {activeCategory === 'all'
                     ? (lang === 'fr' 
-                        ? 'Explorez l’ensemble de nos questions fréquentes ou utilisez les filtres par catégorie pour cibler votre besoin.' 
-                        : 'Explore our complete list of frequently asked questions or filter by specific category above to find exact answers.')
+                        ? 'Consultez notre FAQ pour trouver des informations utiles sur nos produits, services et assistance.' 
+                        : 'Browse our FAQs for helpful information about our products, services, and support.')
                     : (lang === 'fr'
                         ? FAQ_CATEGORIES.find(c => c.id === activeCategory)?.descFr
                         : FAQ_CATEGORIES.find(c => c.id === activeCategory)?.descEn)}
@@ -253,19 +253,15 @@ export default function FaqPage({ onOpenRfq }) {
               </div>
             </div>
 
-            {/* Quick Sourcing Help Box */}
+            {/* Quick Support Help Box */}
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 text-white space-y-4 shadow-card">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[11px] font-bold text-secondary-light">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>{lang === 'fr' ? 'Service Client Dédié' : 'Dedicated Support Desk'}</span>
-              </div>
               <h4 className="text-base font-bold leading-snug">
-                {lang === 'fr' ? 'Besoin d’un Devis Express pour Appel d’Offres ?' : 'Preparing a Hospital Tender or Wholesale Order?'}
+                {lang === 'fr' ? 'Besoin d’un Devis Personnalisé ?' : 'Need a Custom Quotation or Product Details?'}
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed">
                 {lang === 'fr' 
-                  ? 'Transmettez-nous votre cahier des charges et recevez une proposition chiffrée avec fiches techniques.' 
-                  : 'Submit your specification sheet to receive competitive tiered wholesale pricing and full compliance documentation.'}
+                  ? 'Transmettez-nous vos besoins et recevez rapidement une proposition officielle avec fiches techniques.' 
+                  : 'Submit your requirements to receive direct official pricing, technical data sheets, and dedicated assistance.'}
               </p>
               <button
                 onClick={() => onOpenRfq()}
